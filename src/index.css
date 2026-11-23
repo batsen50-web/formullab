@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #06140f;
+    color: #ecf7f1;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: contain;
+    overflow-x: hidden;
+  }
+
+  button,
+  a {
+    touch-action: manipulation;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.lab-canvas {
+  background-color: #06140f;
+  background-image:
+    radial-gradient(ellipse 65% 50% at 88% 12%, rgba(45, 212, 140, 0.19) 0%, rgba(16, 85, 58, 0.08) 45%, transparent 72%),
+    radial-gradient(ellipse 55% 45% at 10% 85%, rgba(28, 173, 113, 0.14) 0%, transparent 68%),
+    linear-gradient(180deg, #0b1e17 0%, #071510 52%, #05110d 100%);
+  position: relative;
+}
+
+.lab-grid-overlay {
+  background-image:
+    linear-gradient(to right, rgba(94, 234, 175, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(94, 234, 175, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.lab-panel {
+  background: linear-gradient(165deg, rgba(16, 44, 34, 0.78) 0%, rgba(10, 29, 22, 0.86) 100%);
+  border: 1px solid rgba(94, 234, 175, 0.22);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(167, 243, 208, 0.12);
+  backdrop-filter: blur(12px);
+}
+
+.lab-card-row {
+  background: linear-gradient(150deg, rgba(17, 46, 36, 0.72) 0%, rgba(11, 31, 24, 0.82) 100%);
+  border: 1px solid rgba(94, 234, 175, 0.2);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(167, 243, 208, 0.1);
+}
+
+.lab-card-row:hover {
+  border-color: rgba(110, 231, 183, 0.42);
+  background: linear-gradient(150deg, rgba(22, 58, 45, 0.82) 0%, rgba(13, 37, 28, 0.9) 100%);
+}
+
+.lab-active-mint {
+  background: linear-gradient(90deg, #19be7c 0%, #52e3a4 55%, #89f3c3 100%);
+  color: #052217;
+  border: 1px solid rgba(167, 243, 208, 0.7);
+  box-shadow:
+    0 0 18px rgba(52, 211, 153, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.lab-cta-emerald {
+  background: linear-gradient(90deg, #118c5b 0%, #19ad72 50%, #12915f 100%);
+  color: #ffffff;
+  border: 1px solid rgba(110, 231, 183, 0.55);
+  box-shadow:
+    0 0 24px rgba(25, 173, 114, 0.32),
+    inset 0 1px 0 rgba(209, 250, 229, 0.3);
+}
+
+.lab-cta-emerald:hover:not(:disabled) {
+  background: linear-gradient(90deg, #15a169 0%, #20c482 50%, #16a46c 100%);
+  box-shadow:
+    0 0 30px rgba(52, 211, 153, 0.45),
+    inset 0 1px 0 rgba(209, 250, 229, 0.4);
+}
+
+.lab-lcd {
+  background: #101914;
+  border: 1px solid rgba(94, 234, 175, 0.25);
+  box-shadow:
+    inset 0 2px 10px rgba(0, 0, 0, 0.7),
+    0 1px 0 rgba(167, 243, 208, 0.08);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
