@@ -1,0 +1,748 @@
+import type {ReligionExamQuestion} from '../types/religion';
+
+export const RELIGION_EXAM_QUESTIONS: ReligionExamQuestion[] = [
+  // =========================================================================
+  // 1. BİLGİ, İMAN ESASLARI & ALLAH İNANCI (10 SORU)
+  // =========================================================================
+  {
+    id: 'rq_1',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam bilgi teorisinde (epistemoloji) herkes için bağlayıcı kesin bilgi kaynakları üç başlıkta toplanır. Aşağıdakilerden hangisi bu üç "Esbâb-ı İlim" kaynağından biri değildir?',
+    choices: ['Keşif ve Rüya', 'Selim Akıl', 'Sadık Haber', 'Salim Duyular'],
+    correctIndex: 0,
+    examTip:
+      'Rüya, ilham ve keşif öznel (kişiye özel) olduğu için İslam’da bağlayıcı genel bilgi kaynağı kabul edilmez.',
+    relatedTermId: 'rel_bilgi_kaynaklari',
+  },
+  {
+    id: 'rq_2',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Yalan üzere birleşmeleri aklen mümkün olmayan kalabalık bir topluluğun her nesilde bir sonraki nesle kesintisiz aktardığı ve Kur’an-ı Kerim’in bize ulaşma biçimini de ifade eden bilgi türü hangisidir?',
+    choices: ['Mütevatir Haber', 'Tahkikî İlham', 'Kıyas-ı Fukaha', 'Tecrübi İstihsan'],
+    correctIndex: 0,
+    examTip:
+      'Sadık haber iki kısma ayrılır: Vahiy (Peygamber haberi) ve Mütevatir Haber (yalan üzere uzlaşması imkânsız toplu nakil).',
+    relatedTermId: 'rel_sadik_haber_mutevatir',
+  },
+  {
+    id: 'rq_3',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Ehlisünnet âlimlerine göre iman–amel ilişkisi konusunda aşağıdaki yargılardan hangisi doğrudur?',
+    choices: [
+      'Amel imanın bir parçası değildir; büyük günah işleyen mümin dinden çıkmaz, günahkâr (fasık) olur.',
+      'İbadetleri aksatan kişi otomatik olarak imandan çıkmış sayılır.',
+      'Yalnızca diliyle inandığını söyleyip kalbiyle onaylamayan kişi gerçek mümin kabul edilir.',
+      'İman doğuştan gelir, insan iradesiyle hiçbir ilgisi yoktur.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İmanın aslı kalp ile tasdiktir; ancak salih ameller imanı korur, olgunlaştırır ve güçlendirir.',
+    relatedTermId: 'rel_iman_tasdik_ikrar',
+  },
+  {
+    id: 'rq_4',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir gencin yalnızca ailesinden ve çevresinden gördüğü için değil; evrendeki düzeni inceleyip Kur’an ve akıl delillerini kavrayarak bilinçli biçimde Allah’a inanması hangi iman düzeyidir?',
+    choices: ['Tahkikî İman', 'Taklidî İman', 'Mütevatir İman', 'İzafî İman'],
+    correctIndex: 0,
+    examTip:
+      'Araştırma, bilgi ve delile dayanan iman Tahkikî; taklit ve alışkanlığa dayanan ise Taklidî imandır.',
+    relatedTermId: 'rel_taklidi_tahkiki_iman',
+  },
+  {
+    id: 'rq_5',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Rum Suresi 30. ayette geçen ve insanın doğuştan temiz, iyiye ve tek olan Allah’ı tanımaya yatkın yaratılışını ifade eden kavram aşağıdakilerden hangisidir?',
+    choices: ['Fıtrat', 'Tekvin', 'İstirca', 'Mizan'],
+    correctIndex: 0,
+    examTip:
+      'Fıtrat doğuştan gelen tevhit eğilimi; Haniflik ise Hz. İbrahim’in bozulmamış tevhit yoluna bağlılıktır.',
+    relatedTermId: 'rel_fitrat_haniflik',
+  },
+  {
+    id: 'rq_6',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Allah’ın hiçbir şeye muhtaç olmamasını, varlığının kendi zatından olup her şeyin O’na muhtaç olmasını ifade eden Zati sıfatı hangisidir?',
+    choices: ['Kıyam bi-nefsihi', 'Muhalefetün lil-havadis', 'Vahdaniyet', 'Beka'],
+    correctIndex: 0,
+    examTip:
+      'Vücud (var olmak), Kıdem (başlangıcı olmamak), Beka (sonu olmamak), Vahdaniyet (bir olmak), Muhalefetün lil-havadis (yaratılmışlara benzememek), Kıyam bi-nefsihi (kendi kendine var olmak).',
+    relatedTermId: 'rel_allahi_tanimada_sifatlar',
+  },
+  {
+    id: 'rq_7',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Haşr Suresi 24. ayette arka arkaya geçen "yoktan yaratan, her şeyi birbiriyle uyumlu var eden ve her varlığa özgün biçim/suret veren" anlamındaki üç Esmayıhüsna sırasıyla hangileridir?',
+    choices: [
+      'el-Hâlık · el-Bâri · el-Musavvir',
+      'er-Rezzak · eş-Şâfî · el-Hayy',
+      'el-Basîr · es-Semî · el-Alîm',
+      'el-Gaffâr · el-Kahhar · el-Münim',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Hâlık (planlayıp yaratan), Bâri (uyumlu ve kusursuz var eden), Musavvir (şekil ve özellik veren).',
+    relatedTermId: 'rel_esmayihusna',
+  },
+  {
+    id: 'rq_8',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Güneş sistemindeki yörüngelerin, atmosfer gaz oranlarının ve canlı organlarının bir tesadüfle açıklanamayacak ölçüde hassas ve amaçlı bir düzen içinde olmasından hareketle Allah’ın varlığını ispatlayan delil hangisidir?',
+    choices: [
+      'Gaye ve Nizam Delili',
+      'Ekmel Varlık Delili',
+      'Mütevatir Haber Delili',
+      'Kıyas Delili',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Evrendeki düzen ve amaçlılığı esas alan kanıta Gaye ve Nizam (Teleolojik) Delili denir.',
+    relatedTermId: 'rel_gaye_nizam_ekmel',
+  },
+  {
+    id: 'rq_9',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Cibril Hadisi’nde "Allah’ı görüyormuşçasına O’na kulluk etmendir; sen O’nu görmesen de O seni görmektedir" şeklinde tanımlanan yüksek ahlak ve kulluk bilinci kavramı hangisidir?',
+    choices: ['İhsan', 'Taklit', 'Teşyi', 'Cebir'],
+    correctIndex: 0,
+    examTip:
+      'İhlas niyette samimiyet (riya karşıtı), İhsan ise Allah’ın gözetimi bilinciyle en güzel şekilde davranmaktır.',
+    relatedTermId: 'rel_ihlas_ihsan_takva',
+  },
+  {
+    id: 'rq_10',
+    category: 'BILGI_IMAN_ALLAH',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Sınav için hiç çalışmayan bir öğrencinin "Allah kaderimde yazdıysa kazanırım, çalışmama gerek yok" demesi İslam’daki hangi iki kavramın yanlış anlaşılmasından kaynaklanır?',
+    choices: [
+      'Cüzi İrade ve Tevekkül',
+      'Fıtrat ve Haniflik',
+      'Kıraat ve Tilavet',
+      'Hidayet ve Şirk',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Doğru tevekkül insanın cüzi iradesiyle bütün sebeplere sarılıp çalıştıktan sonra sonucu Allah’a bırakmasıdır.',
+    relatedTermId: 'rel_kader_irade',
+  },
+
+  // =========================================================================
+  // 2. İBADET YÜKÜMLÜLÜĞÜ, AHİRET & HZ. MUHAMMED (10 SORU)
+  // =========================================================================
+  {
+    id: 'rq_11',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bazı Müslümanların yerine getirmesiyle diğer Müslümanların üzerinden sorumluluğun kalktığı, ancak kimse yapmazsa bütün toplumun sorumlu olduğu dinî yükümlülük türü hangisidir?',
+    choices: ['Farz-ı Kifaye', 'Farz-ı Ayn', 'Sünnet-i Müekkede', 'Tenzihen Mekruh'],
+    correctIndex: 0,
+    examTip:
+      'Cenaze namazı ve selamı almak Farz-ı Kifaye; beş vakit namaz, oruç ve zekât ise Farz-ı Ayn’dır.',
+    relatedTermId: 'rel_mukellef_efal',
+  },
+  {
+    id: 'rq_12',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İbadet yükümlülükleri içinde Kur’an ve hadisle sabit olmakla birlikte delili farz kadar kesin olmayan; Vitir namazı, Bayram namazları ve Fıtır sadakası gibi hükümleri kapsayan derece hangisidir?',
+    choices: ['Vacip', 'Mendup', 'Mübah', 'Müfsit'],
+    correctIndex: 0,
+    examTip:
+      'Vacibin inkârı kişiyi dinden çıkarmaz ama terki dinî sorumluluk doğurur; Hanefi fıkhında önemli bir kategoridir.',
+    relatedTermId: 'rel_vacip_sunnet_mekruh',
+  },
+  {
+    id: 'rq_13',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Ahiret hayatının aşamaları kronolojik sıraya konulduğunda aşağıdaki dizilimlerden hangisi doğrudur?',
+    choices: [
+      'Ölüm → Berzah → Kıyamet → Baas → Haşir → Mizan',
+      'Ölüm → Haşir → Berzah → Baas → Kıyamet → Mizan',
+      'Kıyamet → Berzah → Baas → Ölüm → Mizan → Haşir',
+      'Berzah → Baas → Kıyamet → Ölüm → Haşir → Mizan',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Berzah kabir hayatıdır; ilk Sûr ile Kıyamet kopar, ikinci Sûr ile Baas (diriliş) olur, Mahşer’de toplanılır (Haşir) ve Mizan’da tartılır.',
+    relatedTermId: 'rel_ahiret_asamalari',
+  },
+  {
+    id: 'rq_14',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Vefat eden bir Müslümanın ahirete uğurlanması sürecinde yapılan cenaze namazı hakkında aşağıdakilerden hangisi yanlıştır?',
+    choices: [
+      'Her rekâtında iki secde ve bir rükû bulunan Farz-ı Ayn bir ibadettir.',
+      'Hükmü Farz-ı Kifayedir ve ölen Müslüman için dua niteliği taşır.',
+      'Ayakta dört tekbir alınarak kılınır.',
+      'Ardından kabre uğurlanmasına Teşyi, yakınlarına başsağlığı dilenmesine Taziye denir.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Cenaze namazında rükû ve secde bulunmaz; kıyamda dört tekbir ile kılınan Farz-ı Kifaye bir duadır.',
+    relatedTermId: 'rel_cenaze_ugurlama',
+  },
+  {
+    id: 'rq_15',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Kur’an-ı Kerim’de namazın kılınması genel olarak emredildiği hâlde namazların vakitleri, rekât sayıları ve kılınış şekilleri Hz. Muhammed tarafından uygulanarak açıklanmıştır. Bu durum Peygamberimizin hangi nübüvvet görevidir?',
+    choices: ['Tebyin', 'Tebliğ', 'Teşri', 'Hatemünnebiyyin'],
+    correctIndex: 0,
+    examTip:
+      'Tebliğ vahyi bildirme; Tebyin vahyi açıklama/örnekleme; Teşri hüküm koyma; Temsil ise bizzat yaşama görevidir.',
+    relatedTermId: 'rel_peygamberlik_gorevleri',
+  },
+  {
+    id: 'rq_16',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir sahabinin yaptığı bir davranışı Hz. Muhammed’in görmesi veya duyması karşısında buna itiraz etmeyip sessiz kalarak ya da tebessümle onaylaması hangi sünnet türüne girer?',
+    choices: ['Takrirî Sünnet', 'Kavlî Sünnet', 'Fiilî Sünnet', 'Mütevatir Sünnet'],
+    correctIndex: 0,
+    examTip:
+      'Kavlî (söz), Fiilî (davranış), Takrirî (onaylama/sükût) sünnetin üç temel kısmıdır.',
+    relatedTermId: 'rel_hadis_sunnet_turleri',
+  },
+  {
+    id: 'rq_17',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam’ın ilk yıllarında Mekke’deki evini Müslümanların toplanıp Kur’an öğrendiği ilk eğitim ve tebliğ merkezine dönüştüren genç sahabi kimdir?',
+    choices: [
+      'Erkam bin Ebülerkam',
+      'Üsame bin Zeyd',
+      'Muaz bin Cebel',
+      'Musab bin Umeyr',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Darülerkâm (Erkam’ın evi) İlk eğitim merkezi; Musab bin Umeyr Medine’nin ilk öğretmeni; Üsame bin Zeyd 18 yaşındaki komutan.',
+    relatedTermId: 'rel_genc_sahabiler',
+  },
+  {
+    id: 'rq_18',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir kimsenin vefat ettikten sonra da amel defterinin kapanmayıp sevabının sürmesini sağlayan okul, hastane, çeşme yaptırmak veya faydalı ilim bırakmak gibi kalıcı hayırlara ne ad verilir?',
+    choices: ['Sadaka-i Cariye', 'Fıtır Sadakası', 'Öşür Zekâtı', 'İtikâf'],
+    correctIndex: 0,
+    examTip:
+      'Hadis-i şerifte kesintisiz süren üç amel: Sadaka-i Cariye, faydalanılan ilim ve dua eden hayırlı evlat olarak geçer.',
+    relatedTermId: 'rel_zakat_infak',
+  },
+  {
+    id: 'rq_19',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Atatürk’ün talebiyle TBMM kararı sonucu hazırlanan ve Türkçedeki en kapsamlı Kur’an tefsirlerinden biri kabul edilen "Hak Dini Kur’an Dili" eserinin müellifi kimdir?',
+    choices: [
+      'Elmalılı Muhammed Hamdi Yazır',
+      'İmam Buhari',
+      'Hacı Bektaş Veli',
+      'İmam Şafii',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Aynı dönemde hadis tercümesi görevi ise Kamil Miras ve Babanzade Ahmed Naim’e verilmiştir (Sahih-i Buhari Muhtasarı Tecrid-i Sarih).',
+    relatedTermId: 'rel_kurana_saygi_tefsir_meal',
+  },
+  {
+    id: 'rq_20',
+    category: 'IBADET_AHIRET_PEYGAMBER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam fıkhında güvenilirliğiyle öne çıkan ve "Kütübisitte" olarak adlandırılan altı temel hadis kitabı yazarları arasında aşağıdakilerden hangisi yoktur?',
+    choices: ['İmam Matüridi', 'Buhari', 'Müslim', 'Tirmizi'],
+    correctIndex: 0,
+    examTip:
+      'Kütübisitte: Buhari, Müslim, Ebu Davud, Tirmizi, Nesai ve İbn Mace. İmam Matüridi kelam/inanç ekolünün kurucusudur.',
+    relatedTermId: 'rel_kutubisitte',
+  },
+
+  // =========================================================================
+  // 3. AHLAK, DEĞERLER, KUR'AN MESAJLARI & GÜNCEL MESELELER (10 SORU)
+  // =========================================================================
+  {
+    id: 'rq_21',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam ahlakında aşırılıklardan (ifrat ve tefritten) uzak dengeli davranma anlamına gelen "İtidâl" ilkesine göre aşağıdaki dört temel erdem eşleştirmelerinden hangisi yanlıştır?',
+    choices: [
+      'Şecaat — Her türlü tehlikeden korkup pasif kalmaktır.',
+      'Hikmet — Doğruyu yanlıştan ayıran bilgeliktir.',
+      'İffet — İnsanın arzularını helal ve meşru sınırda tutmasıdır.',
+      'Adalet — Herkese hakkını vermek ve dengeyi korumaktır.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Şecaat korkaklık (tefrit) ile saldırganlık (ifrat) arasındaki bilinçli cesaret ve yiğitlik erdemidir.',
+    relatedTermId: 'rel_dort_temel_erdem',
+  },
+  {
+    id: 'rq_22',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir kişinin kendisinde olmayan üstünlükleri veya imkânları başka birinde görüp "Keşke onda da olmasın, yok olsun" diye içten içe kin beslemesi ile "Ona verilenin benzeri bana da verilsin" diye imrenmesi arasındaki ayrım sırasıyla hangi iki kavramdır?',
+    choices: [
+      'Haset ve Gıpta',
+      'Gıybet ve Tecessüs',
+      'Suizan ve Hüsnüzan',
+      'Riya ve İhlas',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Haset (kıskançlık) kötülük dilemektir ve yerilmiştir; Gıpta (imrenme) başkasının elindekini çekememe değil, iyilikte yarışma arzusudur.',
+    relatedTermId: 'rel_yerilen_davranislar',
+  },
+  {
+    id: 'rq_23',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Hucurat Suresi 12. ayette başkalarının özel hayatını, gizli kusurlarını ve mahremiyetini araştırmak anlamına gelip kesin olarak yasaklanan davranış hangisidir?',
+    choices: ['Tecessüs', 'Tevekkül', 'İnfak', 'Tebyin'],
+    correctIndex: 0,
+    examTip:
+      'Hucurat 12’de sırasıyla suizandan kaçının, tecessüs (gizli hâl araştırma) yapmayın ve gıybet etmeyin uyarısı yer alır.',
+    relatedTermId: 'rel_yerilen_davranislar',
+  },
+  {
+    id: 'rq_24',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam hukukunun (Makasıd-ı Şeria) korumayı güvence altına aldığı beş temel değer "Zarurat-ı Diniye" olarak adlandırılır. Alkol ve uyuşturucu maddelerin yasaklanması doğrudan bu beş ilkeden hangisinin korunmasına yöneliktir?',
+    choices: [
+      'Aklın korunması',
+      'Malın korunması',
+      'Dinin korunması',
+      'Ticaret yollarının korunması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Zarurat-ı Diniye: Can, Akıl, Din, Nesil ve Malın korunması.',
+    relatedTermId: 'rel_zarurat_i_diniye',
+  },
+  {
+    id: 'rq_25',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam’ın güncel tıbbi meselelere yaklaşımında organ nakli ile ötanazi hakkında verilen yargılardan hangisi doğrudur?',
+    choices: [
+      'Gönüllü ve ticari olmayan organ nakli hayat kurtardığı için caiz; ötanazi ise yaşam hakkına müdahale olduğu için haramdır.',
+      'Hem organ nakli hem ötanazi her şartta yasaktır.',
+      'Ötanazi hastanın rızasıyla caiz, organ nakli ise haramdır.',
+      'Kan bağışı caiz ancak otopsi her koşulda kesinlikle haramdır.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Maide 32. ayet ("Bir canı kurtaran bütün insanlığı kurtarmış gibidir") organ bağışının caiz görülmesinin temel dayanağıdır.',
+    relatedTermId: 'rel_organ_otopsi_otanazi',
+  },
+  {
+    id: 'rq_26',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Fıkıh usulünde "Hakkında Kur’an ve Sünnette açık bir yasaklayıcı hüküm bulunmayan dünyevi eşya ve davranışlar ilke olarak serbest (mübah) kabul edilir" anlamındaki ilke hangisidir?',
+    choices: [
+      'Eşyada asıl olan ibahadır',
+      'Amel imandan bir cüzdür',
+      'İbadetlerde kıyas asıldır',
+      'Taklidî iman esastır',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İbadetlerde ise bunun tersine "yapılışı vahiy ve sünnetle belirlenmiş olma (tevkifîlik)" ilkesi geçerlidir.',
+    relatedTermId: 'rel_ibaha_ilkesi',
+  },
+  {
+    id: 'rq_27',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İsra Suresi 23–29. ayetlerde verilen ahlaki ilkeler arasında aşağıdakilerden hangisi yer almaz?',
+    choices: [
+      'Ruhbanlık seçerek dünya işlerinden tamamen el çekmek',
+      'Anne ve babaya "öf" bile demeden şefkat ve güzel sözle davranmak',
+      'Akrabaya, yoksula ve yolda kalmışa hakkını vermek',
+      'Cimrilik ve savurganlıktan kaçınıp harcamada dengeyi korumak',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İsra 27’de savurganların (müsriflerin) "şeytanların kardeşleri" olduğu vurgulanır.',
+    relatedTermId: 'rel_isra_23_29_mesaj',
+  },
+  {
+    id: 'rq_28',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '"İyilik, yüzlerinizi doğu ve batı tarafına çevirmeniz değildir. Asıl iyilik Allah’a, ahirete... iman eden, sevdiği maldan yakına, yetime, yoksula veren, namaz kılıp zekât veren, sözünde duranların davranışıdır." (Bakara 177). Bu ayet aşağıdakilerden hangisini vurgular?',
+    choices: [
+      'Gerçek iyiliğin (Birr) şekilcilikten öte iman, ibadet, infak ve ahde vefa bütünlüğü olduğunu',
+      'İbadetlerin yalnız belli bir yöne dönmekten ibaret olduğunu',
+      'Zenginlerin fakirlere yalnız zekât dışında yardım edemeyeceğini',
+      'Sözünde durmanın yalnızca ticari anlaşmalar için geçerli olduğunu',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bakara 177 "Birr Ayeti" olarak bilinir ve dinin özünü şekilcilikten çıkarıp iman-ahlak-infak eksenine yerleştirir.',
+    relatedTermId: 'rel_bakara_177_birr',
+  },
+  {
+    id: 'rq_29',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Hucurat Suresi 13. ayete göre farklı millet ve kabileler hâlinde yaratılmış olmamızın amacı ve Allah katında insanın gerçek değer ölçüsü sırasıyla nedir?',
+    choices: [
+      'Tanışıp kaynaşmak · Takva',
+      'Üstünlük yarışı yapmak · Soy ve servet',
+      'Birbirinden ayrışmak · Fiziksel güç',
+      'Tek dil konuşmak · Coğrafi konum',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Hucurat 13, ırkçılığı ve kabile üstünlüğünü kökten reddedip yalnız takva (sorumluluk bilinci) ölçüsünü koyar.',
+    relatedTermId: 'rel_hucurat_10_13',
+  },
+  {
+    id: 'rq_30',
+    category: 'AHLAK_DEGERLER_GUNCEL',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Al-i İmran Suresi 159. ayette Hz. Muhammed’e hitaben yöneticilik ve insan ilişkilerinde önerilen tutumlar arasında hangisi yer alır?',
+    choices: [
+      'Yumuşak huylu olmak, affetmek ve işlerde istişare (danışma) etmek',
+      'Kararları kimseye danışmadan tek başına ve sertlikle uygulamak',
+      'Hata yapanları toplumdan kalıcı olarak dışlamak',
+      'Toplumsal sorunlarda karar vermekten kaçınmak',
+    ],
+    correctIndex: 0,
+    examTip:
+      '"Eğer kaba, katı yürekli olsaydın etrafından dağılır giderlerdi; onları bağışla ve iş hakkında onlara danış (istişare et)."',
+    relatedTermId: 'rel_ali_imran_103_159',
+  },
+
+  // =========================================================================
+  // 4. İSLAM MEDENİYETİ, BİLİM, SANAT & ANADOLU İRFANI (10 SORU)
+  // =========================================================================
+  {
+    id: 'rq_31',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam medeniyetinin Kurtuba ve Gırnata (Elhamra) merkezli olarak geliştiği ve yaptığı Latince çevirilerle Avrupa’da Rönesans’a zemin hazırlayan kültür havzası hangisidir?',
+    choices: [
+      'Endülüs Havzası',
+      'Horasan Havzası',
+      'Hint Alt Kıtası Havzası',
+      'Hicaz Havzası',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İbn Rüşd ve İbn Hazm gibi düşünürler Endülüs İslam medeniyetinin yetiştirdiği büyük âlimlerdendir.',
+    relatedTermId: 'rel_medeniyet_havzalari',
+  },
+  {
+    id: 'rq_32',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Abbasiler döneminde Bağdat’ta kurularak antik Yunan, Hint ve İran bilim eserlerinin Arapçaya çevrildiği, bünyesinde kütüphane ve rasathane barındıran büyük akademi hangisidir?',
+    choices: ['Beytülhikme', 'Darülerkâm', 'Darülkurra', 'Nizamiye Medresesi'],
+    correctIndex: 0,
+    examTip:
+      'Beytülhikme (Hikmet Evi), Halife Me’mun döneminde Harezmi ve Kindi gibi bilim insanlarının çalıştığı kurumsal zirvedir.',
+    relatedTermId: 'rel_suffe_beytulhikme',
+  },
+  {
+    id: 'rq_33',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam ilimlerinden hangisi iman esaslarını akli ve nakli delillerle açıklayıp savunmayı konu edinir?',
+    choices: ['Kelam', 'Tecvit', 'Siyer', 'Tasavvuf'],
+    correctIndex: 0,
+    examTip:
+      'Tefsir Kur’an’ı yorumlar; Hadis sünneti derler; Fıkıh ibadet ve hukuku düzenler; Kelam inanç esaslarını temellendirir.',
+    relatedTermId: 'rel_din_bilim_iliskisi',
+  },
+  {
+    id: 'rq_34',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '"Kitabü’l-Menazır" adlı eseriyle ışığın gözden değil nesnelerden göze geldiğini kanıtlayıp karanlık oda (camera obscura) ve modern optik biliminin temellerini atan İslam bilgini kimdir?',
+    choices: ['İbnülheysem', 'Harezmi', 'El-Cezeri', 'Zehravi'],
+    correctIndex: 0,
+    examTip:
+      'Harezmi cebir/algoritma, El-Cezeri sibernetik/otomat, Zehravi cerrahi, İbnülheysem optik alanında öncüdür.',
+    relatedTermId: 'rel_islam_bilim_alimleri',
+  },
+  {
+    id: 'rq_35',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'El yazması Kur’an-ı Kerim ve kitap sayfalarının kenarlarını altın yaldız ve bitkisel motiflerle süsleme sanatına ve bu sanatı yapan sanatkâra sırasıyla ne ad verilir?',
+    choices: [
+      'Tezhip ve Müzehhip',
+      'Hat ve Hattat',
+      'Minyatür ve Nakkaş',
+      'Ebru ve Ebruzen',
+    ],
+    correctIndex: 0,
+    examTip:
+      '"Altınlamak" kökünden gelen Tezhip sanatını icra edene Müzehhip; Hat sanatçısına ise Hattat denir.',
+    relatedTermId: 'rel_islam_sanatlari',
+  },
+  {
+    id: 'rq_36',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Türklerin İslamiyet’i benimsemesini kolaylaştıran etkenler arasında Gök Tanrı inancındaki hangi unsurların İslam ile benzerlik taşıması yer alır?',
+    choices: [
+      'Tek Tanrı inancı, ahiret/ruh ölümsüzlüğü, kurban ve temizlik-ahlak anlayışı',
+      'Kast sistemi ve reenkarnasyon inancı',
+      'Üçlü Teslis inancı ve ruhban sınıfı',
+      'Heykel ve putperest tapınak geleneği',
+    ],
+    correctIndex: 0,
+    examTip:
+      '751 Talas Savaşı sonrası Türk boyları arasında İslamiyet’in yayılması, eski inançlardaki tevhide yakın unsurlarla hızlandı.',
+    relatedTermId: 'rel_turklerin_musluman_olusu',
+  },
+  {
+    id: 'rq_37',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Semerkant’ta yetişen, "Kitabü’t-Tevhid" eseriyle aklın Allah’ın varlığını ve iyiyi-kötüyü kavrayabileceğini vurgulayan ve Türklerin itikadi yorumda benimsediği imam kimdir?',
+    choices: ['İmam Matüridi', 'İmam Eşari', 'İmam Şafii', 'Ahmed bin Hanbel'],
+    correctIndex: 0,
+    examTip:
+      'Türklerin çoğu fıkıhta Ebu Hanife’yi (Hanefilik), itikatta ise İmam Matüridi’yi (Matüridilik) takip eder.',
+    relatedTermId: 'rel_ebu_hanife_maturidi',
+  },
+  {
+    id: 'rq_38',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Türkistan’da Türkçe yazdığı "Divân-ı Hikmet" ile göçebe Türklere İslam’ın sevgi ve ahlak esaslarını öğreten ve Anadolu’ya Horasan erenlerini gönderen önder kimdir?',
+    choices: ['Hoca Ahmet Yesevi', 'Mevlana', 'Hacı Bayram Veli', 'Ahi Evran'],
+    correctIndex: 0,
+    examTip:
+      '"Pir-i Türkistan" unvanıyla anılan Hoca Ahmet Yesevi, Türkçe tasavvuf edebiyatının kurucusudur.',
+    relatedTermId: 'rel_ahmet_yesevi',
+  },
+  {
+    id: 'rq_39',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Kırşehir merkezli olarak Anadolu’da esnaf ve zanaatkârları meslek ahlakı, kalite, yardımlaşma ve çırak-kalfa-usta eğitimi etrafında örgütleyen Ahilik teşkilatının kurucusu kimdir?',
+    choices: ['Ahi Evran', 'Yunus Emre', 'Sarı Saltuk', 'İmam Malik'],
+    correctIndex: 0,
+    examTip:
+      'Ahi Evran’ın eşi Fatma Bacı da dünyadaki ilk kadın meslek ve dayanışma örgütü "Bâcıyân-ı Rûm"u (Anadolu Bacıları) kurmuştur.',
+    relatedTermId: 'rel_ahi_evran_ahilik',
+  },
+  {
+    id: 'rq_40',
+    category: 'MEDENIYET_BILIM_SAHSIYET',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Anadolu’nun Türkleşme ve İslamlaşmasında büyük pay sahibi olan "Makalat" adlı eserin yazarı Hacı Bektaş Veli’nin meşhur üçlü ahlak ilkesi aşağıdakilerden hangisidir?',
+    choices: [
+      'Eline, beline, diline sahip ol',
+      'Az ye, az uyu, az konuş',
+      'İfrat, tefrit, taassup',
+      'Techiz, tekfin, teşyi',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Eline (harama/haksızlığa uzanma), beline (iffetli ol), diline (yalan/gıybet söyleme) sahip ol ilkesi hem Ahilikte hem Bektaşilikte temeldir.',
+    relatedTermId: 'rel_haci_bektas_yunus',
+  },
+
+  // =========================================================================
+  // 5. DİNÎ/TASAVVUFİ YORUMLAR, İNANÇ AKIMLARI & YAŞAYAN DİNLER (10 SORU)
+  // =========================================================================
+  {
+    id: 'rq_41',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam tarihinde mezhep ve yorum farklılıklarının ortaya çıkma nedenleri arasında aşağıdakilerden hangisi gösterilemez?',
+    choices: [
+      'Kur’an-ı Kerim metinlerinin farklı coğrafyalarda değiştirilmiş olması',
+      'İnsanların akıl, algı ve mizaç yapılarının farklı olması',
+      'Fetihlerle karşılaşılan farklı kültür ve sosyal ortamların yeni sorunlar doğurması',
+      'Bazı dinî metinlerin (müteşabih ayetlerin) birden fazla yoruma açık olması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Kur’an metni bütün Müslümanlarda aynıdır; değişen şey vahiy değil, insanların o metni anlama ve uygulama biçimleridir.',
+    relatedTermId: 'rel_din_anlayislari_nedenleri',
+  },
+  {
+    id: 'rq_42',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam dünyasındaki iki büyük itikadi mezhepten Matüridilik ile Eşarilik karşılaştırıldığında, "İnsana hiç peygamber gönderilmese bile akıl Allah’ın varlığını ve birliğini bulabilir" görüşü hangisine aittir?',
+    choices: [
+      'Matüridilik',
+      'Eşarilik',
+      'Zeydiye',
+      'İmamiye',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Matüridi akla ve cüzi iradenin seçim özgürlüğüne geniş yer verir; Eşari ise vahiy ve nakli sorumluluğun ön şartı sayar.',
+    relatedTermId: 'rel_itikadi_ehlisunnet',
+  },
+  {
+    id: 'rq_43',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Amelî-fıkhi mezheplerden biri olan Malikiliğin kurucusu İmam Malik’in yazdığı hadis ve fıkıh eseri ile bu mezhebin öne çıkardığı özel fıkıh kaynağı hangisidir?',
+    choices: [
+      'el-Muvatta · Medine halkının uygulaması (Amel-i Ehl-i Medine)',
+      'er-Risale · Örf ve âdet',
+      'Fıkhu’l-Ekber · Kıyas ve rey',
+      'el-Müsned · Maslahat-ı Mürsele',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İmam Malik, Medine halkının yaşayan uygulamasını Hz. Peygamber’den gelen mütevatir bir sünnet mirası saymıştır.',
+    relatedTermId: 'rel_fikhi_mezhepler',
+  },
+  {
+    id: 'rq_44',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Alevilik–Bektaşilik geleneğinde iki evli çiftin dede ve toplum huzurunda kurban kesip ikrar vererek ömür boyu sürecek manevi kardeşlik ve dayanışma sözü vermesine ne ad verilir?',
+    choices: ['Musahiplik', 'Gülbank', 'Tekfin', 'İtikâf'],
+    correctIndex: 0,
+    examTip:
+      'Musahiplik "yol kardeşliği" anlamına gelir; sosyal dayanışma ve ahlaki denetim kurumudur.',
+    relatedTermId: 'rel_alevilik_bektasilik',
+  },
+  {
+    id: 'rq_45',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '"Evreni yaratan üstün bir güç vardır; ancak bu güç evrene yasalarını koyup çekilmiştir; peygamber, vahiy, mucize ve ibadet emri göndermemiştir." görüşünü savunan inanç akımı hangisidir?',
+    choices: ['Deizm', 'Teizm', 'Agnostisizm', 'Panteizm'],
+    correctIndex: 0,
+    examTip:
+      'Deizm "yaradan var ama din/vahiy yok" der; Teizm vahiy ve ibadeti kabul eder; Agnostisizm ise Tanrı’nın bilinemeyeceğini söyler.',
+    relatedTermId: 'rel_inanc_akimlari_teizm_deizm',
+  },
+  {
+    id: 'rq_46',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Dinin toplumsal ve kamusal alandaki etkisini azaltıp insanın yalnız bu dünyaya ve maddi hayata göre yaşamasını öngören dünyevileşme yaklaşımı hangisidir?',
+    choices: ['Sekülarizm', 'Nihilizm', 'Züht', 'Hidayet'],
+    correctIndex: 0,
+    examTip:
+      'Latince "çağ/dünya" anlamına gelen saeculum kökünden türeyen Sekülarizm, dünyevileşme demektir.',
+    relatedTermId: 'rel_ateizm_materyalizm_nihilizm',
+  },
+  {
+    id: 'rq_47',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Yahudilik (Musevilik) inancı ve ibadetleri ile ilgili olarak aşağıdakilerden hangisi doğrudur?',
+    choices: [
+      'Kutsal metinleri Tanah ve Talmud olup cumartesi günü çalışma yasağını içeren Şabat uygulanır.',
+      'Evrensel bir davet dini olduğu için tüm ulusları misyonerlikle dinine davet eder.',
+      'İbadet yerlerine kilise, din adamlarına ise papa denir.',
+      'Teslis inancı 325 İznik Konsili ile temel akide sayılmıştır.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Yahudilikte ibadet yeri Sinagog/Havra, din adamı Haham, sembol Menora; başlıca bayramlar Fısıh, Yom Kippur ve Roş Haşana’dır.',
+    relatedTermId: 'rel_yahudilik',
+  },
+  {
+    id: 'rq_48',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Hristiyanlıkta 16. yüzyılda Martin Luther öncülüğünde Katolik Kilisesi’nin endüljans uygulamasına ve Papa’nın mutlak otoritesine karşı çıkarak yalnız Kitab-ı Mukaddes’i esas alan mezhep hangisidir?',
+    choices: ['Protestanlık', 'Ortodoksluk', 'Katoliklik', 'Zeydilik'],
+    correctIndex: 0,
+    examTip:
+      'Katolik ve Ortodokslarda 7 Sakrament varken Protestanlık yalnız Vaftiz ve Evharistiya’yı (Ekmek-Şarap) kabul eder.',
+    relatedTermId: 'rel_hristiyanlik',
+  },
+  {
+    id: 'rq_49',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Hinduizmde kişinin önceki yaşamındaki iyi veya kötü eylemlerinin sonuçlarına göre bir sonraki yaşamında hangi kastta ya da varlık biçiminde yeniden doğacağını belirleyen neden-sonuç yasası hangisidir?',
+    choices: ['Karma', 'Nirvana', 'Wu-Wei', 'Şabat'],
+    correctIndex: 0,
+    examTip:
+      'Hinduizmde Tenasüh/Reenkarnasyon döngüsünden tamamen kurtulup mutlak huzura ermeye ise "Mokşa" denir.',
+    relatedTermId: 'rel_hinduizm',
+  },
+  {
+    id: 'rq_50',
+    category: 'MEZHEP_TASAVVUF_DINLER',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Siddhartha Gautama tarafından Hindistan’daki Kast Sistemine tepki olarak kurulan, "Dört Yüce Gerçek" ve "Sekiz Aşamalı Orta Yol" ile arzu-acı döngüsünün söndüğü "Nirvana"yı hedefleyen din hangisidir?',
+    choices: ['Budizm', 'Hinduizm', 'Konfüçyanizm', 'Taoizm'],
+    correctIndex: 0,
+    examTip:
+      'Budizmde kutsal metin külliyatı "Üç Sepet" anlamındaki Tripitaka’dır.',
+    relatedTermId: 'rel_budizm',
+  },
+];

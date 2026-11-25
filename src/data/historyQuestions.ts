@@ -1,0 +1,843 @@
+import type {HistoryExamQuestion} from '../types/history';
+
+export const HISTORY_EXAM_QUESTIONS: HistoryExamQuestion[] = [
+  // =========================================================================
+  // 1. TARİH BİLİMİ, İLK ÇAĞ & İLK TÜRKLER (10 SORU)
+  // =========================================================================
+  {
+    id: 'hq_1',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir tarihçi yaptığı kazıda üzerinde hükümdar mührü ve tuğrası bulunan eski bir ferman ile aynı tabakadan çıkan sikkeleri incelemektedir. Bu tarihçinin yararlandığı yardımcı bilimler sırasıyla hangileridir?',
+    choices: [
+      'Diplomatik ve Nümismatik',
+      'Paleografya ve Antropoloji',
+      'Epigrafi ve Filoloji',
+      'Heraldik ve Toponomi',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Ferman, berat ve antlaşma gibi resmî belgeleri Diplomatik; madenî paraları ise Nümismatik (Meskûkat) inceler.',
+    relatedTermId: 'hist_yardimci_bilimler',
+  },
+  {
+    id: 'hq_2',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Şanlıurfa yakınlarındaki Göbeklitepe’de yapılan arkeolojik kazılarda, yerleşik tarım toplumundan çok daha önceye tarihlenen anıtsal taş dikili tapınak kalıntılarına ulaşılmıştır. Bu bulgu tarih bilimi açısından hangi yargıyı doğrular?',
+    choices: [
+      'İnanç ve tapınak inşası, yerleşik tarım yaşamından daha önce ortaya çıkabilmiştir.',
+      'Anadolu’da yazı Mezopotamya’dan önce icat edilmiştir.',
+      'Paleolitik dönem insanları yalnızca maden işleyerek araç üretmiştir.',
+      'Şehir devletleri ilk olarak Güneydoğu Anadolu’da kurulmuştur.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Göbeklitepe (MÖ 10.000 civarı), "önce tarım, sonra tapınak" şeklindeki klasik tarih tezini değiştirmiştir.',
+    relatedTermId: 'hist_tarih_oncesi',
+  },
+  {
+    id: 'hq_3',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'AYT',
+    isHighYield: true,
+    stem: 'Hitit krallarının tanrılarına hesap vermek amacıyla yaşamları boyunca gerçekleştirdikleri olayları tarafsız biçimde yazdırdıkları yıllıklar aşağıdakilerden hangisidir?',
+    choices: ['Anal', 'Pankuş', 'Ziggurat', 'Satraplık'],
+    correctIndex: 0,
+    examTip:
+      'Anallar hem başarıları hem başarısızlıkları yazdığı için objektif (tarafsız) tarih yazıcılığının ilk örneğidir.',
+    relatedTermId: 'hist_hititler',
+  },
+  {
+    id: 'hq_4',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'AYT',
+    isHighYield: true,
+    stem: 'Anadolu İlk Çağ uygarlıklarından Lidyalılarla ilgili olarak aşağıdakilerden hangisi söylenemez?',
+    choices: [
+      'Sardes’ten Sus’a uzanan Kral Yolu’nun batı ucunda ticareti geliştirmişlerdir.',
+      'Tarihte ilk kez elektron/sikke adı verilen madenî parayı basmışlardır.',
+      'Tarımı korumak için öküz kesenlere ölüm cezası veren sert yasalar yapmışlardır.',
+      'Ordularını ücretli askerlerden kurmaları uzun vadede zayıflamalarına yol açmıştır.',
+    ],
+    correctIndex: 2,
+    examTip:
+      'Öküz kesenlere ve saban kıranlara ağır cezalar veren uygarlık Lidyalılar değil, tarıma büyük önem veren Friglerdir.',
+    relatedTermId: 'hist_frig_lidya_urartu',
+  },
+  {
+    id: 'hq_5',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Asya Hun Hükümdarı Mete Han’ın Çin’i sık sık yenip vergiye bağlamasına karşın Türk boylarını Çin topraklarına yerleştirmemesinin temel nedeni nedir?',
+    choices: [
+      'Kalabalık Çin nüfusu içinde Türklerin benliğini ve kültürünü kaybetmesini önlemek',
+      'İpek Yolu ticaretini tamamen Bizans tüccarlarına bırakmak',
+      'Türklerin denizcilik faaliyetlerine ağırlık vermesini sağlamak',
+      'Uygurların yerleşik kültürünü bozmaktan çekinmek',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Mete Han, Çin yerleşimine girmenin asimilasyonla sonuçlanacağını görerek göçebe askerî üstünlüğü korumuştur.',
+    relatedTermId: 'hist_asya_hun',
+  },
+  {
+    id: 'hq_6',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'II. Kök Türk (Kutluk) Devleti döneminde dikilen Orhun Yazıtları ile ilgili olarak hangisi doğrudur?',
+    choices: [
+      'Türk adının geçtiği ilk Türkçe yazılı belgeler olup siyasetname özelliği taşır.',
+      'Uygur alfabesiyle kaleme alınmış hukuk sözleşmeleridir.',
+      'İlk olarak Büyük Selçuklu Sultanı Tuğrul Bey tarafından tercüme ettirilmiştir.',
+      'Yalnızca Maniheizm dininin ibadet esaslarını anlatmaktadır.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bilge Kağan, Kültigin ve Vezir Tonyukuk yazıtları Kök Türk alfabesiyle yazılmış ilk millî belgelerimizdir.',
+    relatedTermId: 'hist_kokturkler',
+  },
+  {
+    id: 'hq_7',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Uygur Devleti’nin Bögü Kağan döneminde Maniheizm dinini kabul etmesi Türk tarihinde nasıl bir kırılmaya yol açmıştır?',
+    choices: [
+      'Yerleşik şehir hayatı, mimari, kütüphane ve matbaa kültürü hızla gelişmiştir.',
+      'Göçebe hayvancılık tamamen yasaklanıp yalnız deniz ticaretine geçilmiştir.',
+      'Orhun Yazıtları ilk kez bu dönemde dikilmiştir.',
+      'Kavimler Göçü’nün başlamasına doğrudan neden olmuştur.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Maniheizm hayvansal gıda ve savaşı yasakladığından Uygurlar yerleşik hayata geçmiş ve askerî karakterleri zayıflamıştır.',
+    relatedTermId: 'hist_uygurlar',
+  },
+  {
+    id: 'hq_8',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '375 Kavimler Göçü’nün Avrupa tarihindeki en önemli siyasi ve toplumsal sonuçları arasında hangisi yer alır?',
+    choices: [
+      'Roma İmparatorluğu ikiye ayrıldı, feodalite güçlendi ve bugünkü Avrupa milletlerinin temeli atıldı.',
+      'Avrupa’da feodalite sona erip merkezî ulus devletler kuruldu.',
+      'Coğrafi Keşifler sonucunda Amerika kıtası keşfedildi.',
+      'Katolik ve Ortodoks kiliseleri tek çatı altında birleşti.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Kavimler Göçü İlk Çağ’ı kapatıp Orta Çağ’ı başlatmış, güvensizlik ortamı derebeyliği (feodalite) doğurmuştur.',
+    relatedTermId: 'hist_kavimler_avrupa_hun',
+  },
+  {
+    id: 'hq_9',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İlk Türk devletlerinde Kurultay’da (Toy) boy beylerinin görüş bildirmesine karşın son kararın kağana ait olması ve kağanın da Töre kurallarına uymak zorunda olması birlikte değerlendirildiğinde hangi sonuca ulaşılır?',
+    choices: [
+      'Kurultay danışma meclisi niteliğindedir ve hukuk üstünlüğü (töre) geçerlidir.',
+      'Kağan mutlak yetkisiz, yalnız sembolik bir dinî liderdir.',
+      'İlk Türk devletlerinde yazılı anayasa ve çok partili sistem vardır.',
+      'Veraset yasası yalnız seçim yoluyla belirlenmektedir.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Son söz kağandaysa Kurultay karar değil danışma organıdır; kağanın töreye uyması ise hukukun üstünlüğünü gösterir.',
+    relatedTermId: 'hist_kut_kurultay_tore',
+  },
+  {
+    id: 'hq_10',
+    category: 'ILK_ORTA_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Türklerin tarih boyunca kullandığı beş takvim (12 Hayvanlı, Hicri, Celâli, Rûmî, Miladi) incelendiğinde yalnız birinin diğer dördünden temel bir astronomi farkına sahip olduğu görülür. Bu fark nedir?',
+    choices: [
+      'Hicri takvimin Ay yılı esaslı, diğer dördünün Güneş yılı esaslı olması',
+      'Celâli takvimin yalnız dinî günlerde kullanılması',
+      '12 Hayvanlı takvimin yalnızca Osmanlı tarafından kullanılması',
+      'Miladi takvimin başlangıcının Hicret olması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Hicri takvim 354 günlük Ay yılına göre düzenlendiğinden Güneş yılı esaslı takvimlerle arasında her yıl 11 gün fark oluşur.',
+    relatedTermId: 'hist_takvimler',
+  },
+
+  // =========================================================================
+  // 2. İSLAMİYET & TÜRK-İSLAM TARİHİ (10 SORU)
+  // =========================================================================
+  {
+    id: 'hq_11',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Emeviler döneminde uygulanan "Mevali" politikası ile Abbasiler dönemindeki ümmet anlayışı karşılaştırıldığında Abbasiler lehine hangi gelişme yaşanmıştır?',
+    choices: [
+      'Türklerin ve Arap olmayan Müslümanların İslamiyet’e katılımı ve devlet kademelerinde yükselmesi hızlandı.',
+      'Halifelik makamı tekrar seçim esasına döndürüldü.',
+      'İslam dünyasındaki bütün mezhep ayrılıkları tamamen sona erdi.',
+      'Endülüs Emevi Devleti Abbasi sınırlarına katıldı.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Emevilerin Arap olmayan Müslümanları ikinci sınıf sayan Mevali siyasetini terk eden Abbasiler döneminde Türkler Samarra ve Avasım şehirlerinde görev aldı.',
+    relatedTermId: 'hist_emeviler_abbasiler',
+  },
+  {
+    id: 'hq_12',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'AYT',
+    isHighYield: true,
+    stem: 'Mısır’da kurulan Türk-İslam devletleri ile ilgili eşleştirmelerden hangisi yanlıştır?',
+    choices: [
+      'Tolunoğulları — Mısır’da kurulan ilk Türk-İslam devletidir.',
+      'İhşîdîler (Akşitler) — Kutsal topraklara (Hicaz) hâkim olan ilk Türk devletidir.',
+      'Eyyubiler — Hıttin Savaşı ile Kudüs’ü Haçlılardan geri almıştır.',
+      'Memlûklular — Babür Devleti’ni yıkarak Hindistan’a hâkim olmuştur.',
+    ],
+    correctIndex: 3,
+    examTip:
+      'Memlûklular Ayn Calut’ta Moğolları durdurup Haçlı kalıntılarını temizlemiş, 1517 Ridaniye Savaşı ile Osmanlı’ya katılmıştır.',
+    relatedTermId: 'hist_misir_turk_devletleri',
+  },
+  {
+    id: 'hq_13',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Karahanlılar Devleti’nin hem İslamiyet’i resmî din olarak kabul etmesi hem de Türkçeyi resmî dil olarak kullanmaya devam etmesi neyin göstergesidir?',
+    choices: [
+      'İslamiyet’i benimserken millî kültür ve kimliklerini koruduklarının',
+      'Abbasilerle tüm siyasi ilişkilerini kestiklerinin',
+      'Halkının tamamının Fars kökenli olduğunun',
+      'Sadece göçebe hukuku uygulayıp medrese açmadıklarının',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Gazneli ve Selçuklularda bilim/edebiyatta Arapça-Farsça öne çıkarken Karahanlılarda Türkçe resmî dil kalmıştır.',
+    relatedTermId: 'hist_karahanlilar',
+  },
+  {
+    id: 'hq_14',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1040 Dandanakan Savaşı’nın Türk tarihi açısından doğurduğu en önemli ikili sonuç aşağıdakilerden hangisidir?',
+    choices: [
+      'Gazneliler yıkılış sürecine girerken Büyük Selçuklu Devleti resmen kuruldu.',
+      'Anadolu’nun kapıları Türklere açıldı ve I. Beylikler kuruldu.',
+      'Türkiye Selçuklu Devleti Moğol egemenliğine girdi.',
+      'Bizans’ın Anadolu’yu geri alma umudu kesin olarak sona erdi.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Dandanakan (1040) kuruluş/yükseliş kırılmasıdır; Pasinler (1048), Malazgirt (1071) ve Miryokefalon (1176) ise Anadolu’nun Türkleşme aşamalarıdır.',
+    relatedTermId: 'hist_gazneliler',
+  },
+  {
+    id: 'hq_15',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Sultan Alparslan’ın 1071 Malazgirt Zaferi sonrasında komutanlarına "Fethedilen toprak fethedenin malıdır" emrini vermesi aşağıdakilerden hangisini doğrudan hızlandırmıştır?',
+    choices: [
+      'Anadolu’da kısa sürede I. Dönem Türk Beyliklerinin kurulmasını ve Türkleşmesini',
+      'Halifeliğin Abbasi ailesinden alınıp Selçuklulara geçmesini',
+      'Avrupa’da Feodalite rejiminin tamamen çökmesini',
+      'II. Viyana Kuşatması’nın başlatılmasını',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bu kılıç hakkı politikası Saltuklu, Mengücek, Danişmentli, Artuklu ve Çaka beyliklerinin doğmasını sağladı.',
+    relatedTermId: 'hist_buyuk_selcuklu',
+  },
+  {
+    id: 'hq_16',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'I. Dönem Anadolu Beyliklerinden Danişmentliler’e ait olup Anadolu’nun bilinen ilk medresesi kabul edilen yapı hangisidir?',
+    choices: [
+      'Yağıbasan Medresesi (Niksar–Tokat)',
+      'Divriği Ulu Camii ve Darüşşifası',
+      'Malabadi Köprüsü',
+      'İznik Süleyman Paşa Medresesi',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Yağıbasan Medresesi → Danişmentliler; Divriği Ulu Camii → Mengücekliler; Malabadi Köprüsü → Artuklular.',
+    relatedTermId: 'hist_ilk_beylikler',
+  },
+  {
+    id: 'hq_17',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1243 Kösedağ Savaşı’nda Türkiye Selçuklu Devleti’nin İlhanlı Moğollarına yenilmesi Anadolu’da nasıl bir siyasi tabloya yol açmıştır?',
+    choices: [
+      'Merkezî otorite bozuldu ve Anadolu’da II. Dönem Türk Beylikleri kuruldu.',
+      'Anadolu’da ilk kez kesin Türk birliği sağlandı.',
+      'Başkent Konya’dan İznik’e taşındı.',
+      'Haçlı Seferleri Kösedağ’dan sonra ilk kez başladı.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Osmanoğulları, Karamanoğulları, Germiyanoğulları gibi II. Dönem Beylikleri Kösedağ bozgunu sonrası ortaya çıkmıştır.',
+    relatedTermId: 'hist_turkiye_selcuklu',
+  },
+  {
+    id: 'hq_18',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Türk-İslam devletlerinde uygulanan İkta Sistemi ile devlet aşağıdakilerden hangisini amaçlamış olamaz?',
+    choices: [
+      'Hazineden nakit para çıkarmadan büyük ve sürekli bir atlı ordu beslemek',
+      'Tarımsal üretimin sürekliliğini ve toprağın boş kalmamasını sağlamak',
+      'Taşrada devlet otoritesini ve güvenliğini tesis etmek',
+      'Miras yoluyla büyük feodal özel mülk hanedanları oluşturmak',
+    ],
+    correctIndex: 3,
+    examTip:
+      'İkta ve Osmanlı’daki Tımar toprakları devlete (mirî) aittir; miras bırakılamaz ve feodalizme izin verilmez.',
+    relatedTermId: 'hist_turk_islam_teskilat',
+  },
+  {
+    id: 'hq_19',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '11. yüzyılda Karahanlılar döneminde Yusuf Has Hacib tarafından kaleme alınan ve ideal devlet yönetimi ile dört alegorik kavramı (Adalet, Mutluluk, Akıl, Akıbet) işleyen eser hangisidir?',
+    choices: ['Kutadgu Bilig', 'Divânü Lûgati’t-Türk', 'Atabetü’l-Hakayık', 'Divân-ı Hikmet'],
+    correctIndex: 0,
+    examTip:
+      '"Mutluluk Veren Bilgi" anlamına gelen Kutadgu Bilig, Türk-İslam edebiyatının ilk siyasetnamesidir.',
+    relatedTermId: 'hist_gecis_eserleri',
+  },
+  {
+    id: 'hq_20',
+    category: 'TURK_ISLAM_SELCUKLU',
+    examLevel: 'AYT',
+    isHighYield: true,
+    stem: 'Avrupa’da "Avicenna" adıyla tanınan ve "El-Kanun fi’t-Tıb" adlı eseri yüzyıllarca Batı üniversitelerinde temel tıp kitabı olarak okutulan Türk-İslam bilgini kimdir?',
+    choices: ['İbn Sina', 'Farabi', 'Biruni', 'Harezmi'],
+    correctIndex: 0,
+    examTip:
+      'Farabi "Muallim-i Sânî", İbn Sina "Avicenna", İbn Rüşd ise "Averroes" unvanıyla Batı’da tanınmıştır.',
+    relatedTermId: 'hist_turk_islam_alimleri',
+  },
+
+  // =========================================================================
+  // 3. OSMANLI KURULUŞ, YÜKSELME & KLASİK DÜZEN (10 SORU)
+  // =========================================================================
+  {
+    id: 'hq_21',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1402 Ankara Savaşı sonrasında 11 yıl süren Fetret Devri yaşanmasına rağmen Osmanlı Devleti’nin Balkan topraklarında büyük kayıplar yaşamamasının başlıca nedeni hangisidir?',
+    choices: [
+      'Balkanlarda uygulanan adil İstimâlet (hoşgörü) ve İskân politikaları',
+      'Timur’un Balkanları bizzat Osmanlı adına koruması',
+      'Avrupa’da Coğrafi Keşiflerin henüz başlamış olması',
+      'Yeniçerilerin sayısının bu dönemde üç katına çıkarılması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Fetret Devri’nde Anadolu beylikleri yeniden kurulurken Balkan halkı Osmanlı’nın adaletli yönetimini feodal beylere tercih etmiştir.',
+    relatedTermId: 'hist_ankara_fetret',
+  },
+  {
+    id: 'hq_22',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1448 II. Kosova Savaşı’nın Türk ve Balkan tarihi açısından önemi aşağıdakilerden hangisidir?',
+    choices: [
+      'Avrupalıların Türkleri Balkanlardan atma umudu kesin olarak sona erdi ve Balkanlar Türk yurdu oldu.',
+      'Osmanlılar ilk kez Rumeli’ye Çimpe Kalesi ile adım attı.',
+      'İstanbul fethedilerek Bizans İmparatorluğu yıkıldı.',
+      'Osmanlı Devleti batıda ilk kez büyük çapta toprak kaybetti.',
+    ],
+    correctIndex: 0,
+    examTip:
+      '1176 Miryokefalon = Anadolu tapusu; 1448 II. Kosova = Balkanların tapusu olarak eşleştirilir.',
+    relatedTermId: 'hist_balkan_hacli_savaslari',
+  },
+  {
+    id: 'hq_23',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Fatih Sultan Mehmet’in 1453’te İstanbul’u fethettikten sonra Ortodoks Patrikhanesi’ne dokunmayarak dinî özgürlük tanımasının temel siyasi amacı nedir?',
+    choices: [
+      'Katolik ve Ortodoks Hristiyan dünyasının Osmanlı’ya karşı birleşmesini engellemek',
+      'Avrupa’dan gelen matbaa ustalarını sarayda görevlendirmek',
+      'Karadeniz ticaretini tamamen Venediklilere devretmek',
+      'Yeniçeri Ocağına daha fazla asker toplamak',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Fatih, Katolik Papa ile Ortodoks halk arasındaki tarihi ayrılığı koruyarak yeni Haçlı ittifaklarını bölmeyi hedeflemiştir.',
+    relatedTermId: 'hist_istanbul_fethi',
+  },
+  {
+    id: 'hq_24',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1517 Ridaniye Savaşı ile Memlûk Devleti’nin yıkılması Osmanlı Devleti’ne hangi üç büyük kazanımı birlikte sağlamıştır?',
+    choices: [
+      'Halifeliğin Osmanlı’ya geçmesi, Baharat Yolu’nun denetimi ve kutsal toprakların himayesi',
+      'İpek Yolu’nun fethi, Venedik imtiyazları ve Kırım’ın alınması',
+      'Anadolu Türk birliğinin başlaması, Macaristan’ın fethi ve Preveze Zaferi',
+      'Avusturya’ya protokol üstünlüğü sağlanması ve Bağdat’ın alınması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Yavuz’un Mısır Seferi (Mercidabık 1516 + Ridaniye 1517) Osmanlı’yı İslam dünyasının halifesi ve Baharat Yolu hâkimi yapmıştır.',
+    relatedTermId: 'hist_yavuz_seferleri',
+  },
+  {
+    id: 'hq_25',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1533 İstanbul Antlaşması ile Avusturya Arşidükü’nün protokol bakımından Osmanlı Sadrazamına denk sayılması Osmanlı Devleti’ne ne kazandırmıştır?',
+    choices: [
+      'Avusturya’ya karşı diplomatik ve siyasi protokol üstünlüğü',
+      'Orta Avrupa’daki tüm kalelerin Osmanlı’ya teslimi',
+      'Akdeniz’de Cebelitarık’a kadar tam deniz egemenliği',
+      'Kapitülasyonların ilk kez İngiltere’ye verilmesi',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bu üstünlük 1606 Zitvatorok Antlaşması’nda Avusturya kralının Osmanlı padişahına denk sayılmasıyla sona ermiştir.',
+    relatedTermId: 'hist_kanuni_donemi',
+  },
+  {
+    id: 'hq_26',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Divân-ı Hümâyun üyelerinden hangisi "İlmiye" (din, eğitim ve hukuk) sınıfı içinde yer almaktadır?',
+    choices: [
+      'Kazasker ve Şeyhülislam',
+      'Nişancı ve Defterdar',
+      'Sadrazam ve Kaptanıderya',
+      'Reisülküttab ve Yeniçeri Ağası',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İlmiye: Şeyhülislam, Kazasker, Kadı, Müderris. Kalemiye: Nişancı, Defterdar, Reisülküttab. Seyfiye: Sadrazam, Vezir, Kaptanıderya, Beylerbeyi.',
+    relatedTermId: 'hist_divan_i_humayun',
+  },
+  {
+    id: 'hq_27',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Osmanlı toprak düzeninde bir köylünün mazeretsiz olarak toprağını 3 yıl üst üste boş bırakması hâlinde "Çiftbozan" vergisi alınıp toprağın başkasına verilmesinin temel amacı nedir?',
+    choices: [
+      'Tarımsal üretimin sürekliliğini ve vergi gelirlerini korumak',
+      'Köylülerin tamamını büyük şehirlere göç ettirmek',
+      'Toprağı özel mülkiyete çevirip satılabilir hâle getirmek',
+      'İltizam ve malikâne sistemini tamamen kaldırmak',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Çiftbozan vergisi bir ceza değil, üretimi ve tımarlı sipahi beslenmesini güvence altına alan önlemdir.',
+    relatedTermId: 'hist_toprak_sistemi',
+  },
+  {
+    id: 'hq_28',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'I. Ahmet döneminde veraset sisteminde yapılan "Ekber ve Erşed" düzenlemesi aşağıdaki sonuçlardan hangisini doğurmuştur?',
+    choices: [
+      'Taht kavgaları azalırken şehzadelerin sancak tecrübesinden uzak (Kafes Usulü) yetişmesine yol açtı.',
+      'Devlet hanedanın tüm erkek üyelerinin ortak malı olmaktan çıkarılıp meşrutiyete geçildi.',
+      'Sancak çıkma zorunluluğu ilk kez bu dönemde başlatıldı.',
+      'Kardeş katli uygulaması zorunlu anayasa kuralı hâline getirildi.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Ekber ve Erşed "belirsizliği" bitirip taht kavgalarını azaltmış ancak tecrübesiz padişahlar ve saray entrikaları dönemini başlatmıştır.',
+    relatedTermId: 'hist_ekber_ersed_kafes',
+  },
+  {
+    id: 'hq_29',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Osmanlı ekonomisinde nakit ihtiyacının artması üzerine geliri doğrudan merkez hazineye aktarılan Mukataa topraklarının vergi toplama hakkının peşin bedelle Mültezimlere bırakılmasına ne ad verilir?',
+    choices: ['İltizam Sistemi', 'Tımar Sistemi', 'Lonca Gedik Sistemi', 'Devşirme Sistemi'],
+    correctIndex: 0,
+    examTip:
+      'İltizamın ömür boyu verilmesine Malikâne denir; zamanla taşrada Ayan adı verilen yerel güçleri ortaya çıkarmıştır.',
+    relatedTermId: 'hist_mukataa_iltizam',
+  },
+  {
+    id: 'hq_30',
+    category: 'OSMANLI_KLASIK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Osmanlı Devleti’nin doğuda (1590) ve batıda (1672) en geniş sınırlarına ulaştığı antlaşmalar sırasıyla hangileridir?',
+    choices: [
+      'Ferhat Paşa Antlaşması ve Bucaş Antlaşması',
+      'Amasya Antlaşması ve Zitvatorok Antlaşması',
+      'Kasr-ı Şirin Antlaşması ve Karlofça Antlaşması',
+      'Prut Antlaşması ve Pasarofça Antlaşması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Doğuda en geniş: 1590 Ferhat Paşa (İran); Batıda en geniş: 1672 Bucaş (Lehistan).',
+    relatedTermId: 'hist_iran_antlasmalari',
+  },
+
+  // =========================================================================
+  // 4. OSMANLI DEĞİŞİM, DİPLOMASİ & XX. YÜZYIL (10 SORU)
+  // =========================================================================
+  {
+    id: 'hq_31',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1699 Karlofça Antlaşması’nın Osmanlı tarihinde bir dönüm noktası olarak görülmesinin temel nedeni nedir?',
+    choices: [
+      'Osmanlı Devleti’nin batıda ilk kez büyük çapta toprak kaybettiği antlaşma olması',
+      'Osmanlı’nın ilk kez İstanbul’da daimî elçilikler açması',
+      'Yeniçeri Ocağı’nın bu antlaşma sonrası derhâl kaldırılması',
+      'Rusya’nın Boğazlardan serbestçe geçiş hakkı kazanması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Karlofça ile Osmanlı taarruzdan savunmaya (Duraklamadan Gerilemeye) geçmiş ve kaybettiği toprakları geri alma siyasetine yönelmiştir.',
+    relatedTermId: 'hist_karlofca_1699',
+  },
+  {
+    id: 'hq_32',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Lâle Devri (1718–1730) ıslahatlarının genel niteliği hakkında aşağıdakilerden hangisi doğrudur?',
+    choices: [
+      'İlk kez Batı’nın üstünlüğü kabul edilip matbaa ve sivil/kültürel yenilikler yapılmış, askerî alanda ıslahat yapılmamıştır.',
+      'Yalnızca kara ve deniz ordusunda Batılı subaylar görevlendirilmiştir.',
+      'Kanun-ı Esasî bu dönemde ilan edilip meclis açılmıştır.',
+      'İlk Türkçe resmî gazete olan Takvim-i Vekayi çıkarılmıştır.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Lâle Devri’nde askerî ıslahat yoktur; ilk Batılı askerî ıslahat I. Mahmut döneminde (Hendesehane & Humbaracı Ahmet Paşa) yapılmıştır.',
+    relatedTermId: 'hist_lale_devri_pasaroftca',
+  },
+  {
+    id: 'hq_33',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1774 Küçük Kaynarca Antlaşması’ndaki hangi hüküm, Rusya’nın ilerleyen yüzyılda Osmanlı Devleti’nin iç işlerine müdahale etmesinin en önemli dayanağı hâline gelmiştir?',
+    choices: [
+      'Rusya’ya Osmanlı sınırları içindeki Ortodoksları koruma (himaye) hakkının verilmesi',
+      'Kırım halkının dinî bakımdan halifeye bağlı kalması',
+      'Osmanlı’nın Rusya’ya savaş tazminatı ödemeyi kabul etmesi',
+      'Azak Kalesi’nin Osmanlı yönetimine iade edilmesi',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Ortodoksların koruyuculuğu maddesi Rusya’ya Balkanlar ve Boğazlar siyasetinde sürekli müdahale bahanesi sunmuştur.',
+    relatedTermId: 'hist_kucuk_kaynarca',
+  },
+  {
+    id: 'hq_34',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1808 yılında II. Mahmut ile Ayanlar arasında imzalanan Sened-i İttifak’ın Türk anayasal tarihindeki yeri nedir?',
+    choices: [
+      'Padişahın mutlak yetkilerinin ilk kez yazılı bir belgeyle sınırlandırılması',
+      'Halkın ilk kez genel oy hakkıyla milletvekili seçmesi',
+      'Azınlıklara devlet memuru olma hakkının ilk kez tanınması',
+      'Düyûn-ı Umûmiye İdaresi’nin kurulması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Sened-i İttifak demokratik bir meclis belgesi değil, padişah ile ayanlar arasındaki sözleşmedir; İngiltere’deki Magna Carta’ya benzetilir.',
+    relatedTermId: 'hist_nizam_i_cedid_sened',
+  },
+  {
+    id: 'hq_35',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1839 Tanzimat Fermanı ile 1856 Islahat Fermanı arasındaki temel fark aşağıdakilerden hangisidir?',
+    choices: [
+      'Tanzimat tüm tebaaya haklar tanırken Islahat Fermanı özellikle gayrimüslimlere yönelik yeni haklar ve ayrıcalıklar getirmiştir.',
+      'Islahat Fermanı ile ilk kez çok partili seçim yapılmıştır.',
+      'Tanzimat Fermanı saltanatın kaldırılmasını öngörmüştür.',
+      'Islahat Fermanı yalnızca Müslüman halka askerlik muafiyeti tanımıştır.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Islahat Fermanı 1856 Paris Konferansı öncesi Avrupa devletlerinin müdahalesini önlemek amacıyla gayrimüslim eşitliğini genişletmiştir.',
+    relatedTermId: 'hist_tanzimat_islahat',
+  },
+  {
+    id: 'hq_36',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Osmanlı Devleti’nin 1881 yılında Muharrem Kararnamesi’ni yayımlayarak alacaklı Avrupa devletlerinin vergi gelirlerine doğrudan el koyduğu kuruma ne ad verilir?',
+    choices: [
+      'Düyûn-ı Umûmiye İdaresi',
+      'Encümen-i Dâniş',
+      'Meclis-i Vâlâ',
+      'Asâkir-i Mansûre-i Muhammediye',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Genel Borçlar İdaresi (Düyûn-ı Umûmiye), Osmanlı ekonomik bağımsızlığına ağır darbe vurmuş ve 1923 Lozan’da kaldırılmıştır.',
+    relatedTermId: 'hist_duyun_i_umumiye',
+  },
+  {
+    id: 'hq_37',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'I. Dünya Savaşı sırasında Arap kabilelerinin bir kısmının İngilizlerle iş birliği yapması Osmanlı’yı kurtarmaya yönelik hangi fikir akımının geçerliliğini kaybettiğini kesinleştirmiştir?',
+    choices: ['İslamcılık (Ümmetçilik)', 'Türkçülük', 'Batıcılık', 'Adem-i Merkeziyetçilik'],
+    correctIndex: 0,
+    examTip:
+      'Balkan Savaşları Osmanlıcılığı, I. Dünya Savaşı ise İslamcılığı sona erdirmiştir.',
+    relatedTermId: 'hist_fikir_akimlari',
+  },
+  {
+    id: 'hq_38',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Osmanlı Devleti’nin I. Dünya Savaşı’nda savaştığı cephelerden hangileri taarruz (saldırı) cepheleridir?',
+    choices: [
+      'Kafkas ve Kanal Cepheleri',
+      'Çanakkale ve Irak Cepheleri',
+      'Hicaz–Yemen ve Suriye–Filistin Cepheleri',
+      'Galiçya ve Makedonya Cepheleri',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Taarruz: Kafkas ve Kanal (2K). Yardım: Galiçya, Makedonya, Romanya (YA-GM). Diğerleri Savunma cephesidir.',
+    relatedTermId: 'hist_i_dunya_cepheleri',
+  },
+  {
+    id: 'hq_39',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '30 Ekim 1918 Mondros Ateşkes Antlaşması’nın İtilaf Devletlerine Anadolu’nun herhangi bir stratejik noktasını işgal etme bahanesi sunan maddesi hangisidir?',
+    choices: [
+      '7. Madde (Güvenliklerini tehdit eden bir durum olursa herhangi bir stratejik noktayı işgal edebilecekler)',
+      '1. Madde (Çanakkale ve İstanbul boğazlarının açılması)',
+      '24. Madde (Altı doğu ilinde karışıklık çıkarsa işgal hakkı)',
+      '12. Madde (Haberleşme ve telgraf hatlarının denetimi)',
+    ],
+    correctIndex: 0,
+    examTip:
+      '7. Madde tüm yurdu işgale açık bırakırken, 24. Madde özellikle doğuda (Vilayet-i Sitte) Ermeni devleti kurma amacı taşımıştır.',
+    relatedTermId: 'hist_mondros_1918',
+  },
+  {
+    id: 'hq_40',
+    category: 'OSMANLI_DEGISIM_SON',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1919 Paris Barış Konferansı’nda İzmir ve Batı Anadolu’nun İtalya yerine Yunanistan’a verilmesi aşağıdakilerden hangisine yol açmıştır?',
+    choices: [
+      'İtilaf Devletleri arasında ilk görüş ayrılığının çıkmasına ve Kuvâ-yı Milliye direnişinin doğmasına',
+      'Wilson İlkeleri’nin ABD tarafından tamamen iptal edilmesine',
+      'Sevr Antlaşması’nın Mebusan Meclisi’nde onaylanmasına',
+      'Rusya’nın savaşa yeniden katılmasına',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İngiltere, Akdeniz’de güçlü İtalya yerine kontrol edebileceği Yunanistan’ı tercih edince İtalya Anadolu’dan soğudu.',
+    relatedTermId: 'hist_paris_izmir_isgali',
+  },
+
+  // =========================================================================
+  // 5. MİLLÎ MÜCADELE, ATATÜRK DÖNEMİ & ÇAĞDAŞ TARİH (10 SORU)
+  // =========================================================================
+  {
+    id: 'hq_41',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Amasya Genelgesi’nde yer alan "Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır" maddesiyle Millî Mücadele’nin hangi iki unsuru ilk kez açıkça belirlenmiştir?',
+    choices: [
+      'Amacı ve Yöntemi (ayrıca üstü kapalı olarak Millî Egemenlik)',
+      'Yalnızca Doğu Cephesi komutanı ve ateşkes tarihi',
+      'Saltanatın ve halifeliğin aynı gün kaldırılma takvimi',
+      'Manda ve himayenin şartlı kabul esasları',
+    ],
+    correctIndex: 0,
+    examTip:
+      '"Milletin bağımsızlığı" amacı, "milletin azim ve kararı" ise yöntemi ve ileride kurulacak cumhuriyet yönetimini işaret eder.',
+    relatedTermId: 'hist_genelgeler_kongreler',
+  },
+  {
+    id: 'hq_42',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'I. TBMM’nin (1920–1923) yasama, yürütme ve yargı yetkilerini kendi bünyesinde toplamasının (güçler birliği) temel nedeni nedir?',
+    choices: [
+      'Olağanüstü savaş koşullarında kararları hızlı alıp uygulamak',
+      'Monarşi ve saltanat yönetimini kalıcı hâle getirmek',
+      'Çok partili demokratik sistemi hemen yürürlüğe koymak',
+      'Yargı bağımsızlığını tamamen ortadan kaldırmak',
+    ],
+    correctIndex: 0,
+    examTip:
+      'I. TBMM olağanüstü bir "savaş meclisi" olduğundan meclis hükümeti sistemini ve güçler birliğini benimsemiştir.',
+    relatedTermId: 'hist_misak_i_milli_tbmm',
+  },
+  {
+    id: 'hq_43',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'TBMM’nin uluslararası alanda imzaladığı ilk siyasi antlaşma olan ve belgede ilk kez "Türkiye" adının geçtiği Gümrü Antlaşması (1920) hangi cephede kazanılan zafer sonunda imzalanmıştır?',
+    choices: [
+      'Doğu Cephesi (Ermenistan’a karşı)',
+      'Batı Cephesi (Yunanistan’a karşı)',
+      'Güney Cephesi (Fransa’ya karşı)',
+      'Çanakkale Cephesi (İngiltere’ye karşı)',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Doğu Cephesi Kâzım Karabekir komutasındaki Osmanlı’dan kalan 15. Kolordu ile kapatılmış, birlikler Batı’ya kaydırılmıştır.',
+    relatedTermId: 'hist_dogu_guney_cepheleri',
+  },
+  {
+    id: 'hq_44',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'I. İnönü Zaferi’nin ardından imzalanan 1921 Moskova Antlaşması’nda hangi ilin Gürcistan’a bırakılması Misak-ı Millî’den verilen ilk taviz olmuştur?',
+    choices: ['Batum', 'Hatay', 'Musul', 'Kars'],
+    correctIndex: 0,
+    examTip:
+      'Misak-ı Millî’den verilen 3 taviz: 1. Batum (Moskova 1921), 2. Hatay (Ankara 1921 — 1939’da geri alındı), 3. Musul (Ankara 1926).',
+    relatedTermId: 'hist_bati_cephesi_inonu',
+  },
+  {
+    id: 'hq_45',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '24 Temmuz 1923 Lozan Barış Antlaşması’nda Türkiye lehine çözülemeyip Türkiye ile İngiltere arasındaki ikili görüşmelere bırakılan tek sorun hangisidir?',
+    choices: [
+      'Musul (Irak sınırı) sorunu',
+      'Kapitülasyonların kaldırılması',
+      'Düyûn-ı Umûmiye borçlarının silinmesi',
+      'Yunanistan savaş tazminatı (Karaağaç)',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Musul sorunu 1925 Şeyh Sait İsyanı’nın yarattığı zafiyet nedeniyle 1926 Ankara Antlaşması ile Irak (İngiltere mandası) lehine sonuçlandı.',
+    relatedTermId: 'hist_mudanya_lozan',
+  },
+  {
+    id: 'hq_46',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1 Kasım 1922’de Saltanatın Kaldırılması kararını hızlandıran doğrudan gelişme aşağıdakilerden hangisidir?',
+    choices: [
+      'İtilaf Devletlerinin Lozan Barış Konferansı’na TBMM ile birlikte İstanbul Hükümetini de davet etmesi',
+      'Terakkiperver Cumhuriyet Fırkasının kurulması',
+      '1929 Dünya Ekonomik Bunalımının başlaması',
+      'Montrö Boğazlar Sözleşmesi’nin imzalanması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'TBMM, Türk milletinin tek meşru temsilcisinin kendisi olduğunu göstermek ve ikiliği önlemek için saltanatı kaldırmıştır.',
+    relatedTermId: 'hist_siyasi_inkilaplar',
+  },
+  {
+    id: 'hq_47',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1926 yılında kabul edilen Türk Medeni Kanunu ile kadınlara aşağıda verilen haklardan hangisi tanınmamıştır?',
+    choices: [
+      'Milletvekili seçme ve seçilme (siyasi haklar)',
+      'Mirasta erkeklerle eşit pay alma hakkı',
+      'Resmî nikâh ve tek eşlilik güvencesi',
+      'Mahkemede şahitlik ve boşanmada eşitlik hakkı',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Medeni Kanun sosyal ve ekonomik eşitlik getirmiştir; siyasi haklar 1930 (belediye), 1933 (muhtar), 1934 (milletvekili) yıllarında verildi.',
+    relatedTermId: 'hist_hukuk_egitim_ekonomi',
+  },
+  {
+    id: 'hq_48',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '1930’lu yıllarda Türkiye’nin batı ve doğu sınırlarını II. Dünya Savaşı tehlikesine karşı güvence altına almak amacıyla imzaladığı bölgesel paktlar sırasıyla hangileridir?',
+    choices: [
+      'Balkan Antantı (1934) ve Sadabat Paktı (1937)',
+      'NATO (1952) ve Varşova Paktı (1955)',
+      'Locarno (1925) ve Briand–Kellogg Paktı (1928)',
+      'Bağdat Paktı (1955) ve Avrupa Konseyi (1949)',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Balkan Antantı (Türkiye, Yunanistan, Yugoslavya, Romanya — TaYYaR) batıyı; Sadabat Paktı (Türkiye, İran, Irak, Afganistan — İTİA) doğuyu korudu.',
+    relatedTermId: 'hist_dis_politika_ataturk',
+  },
+  {
+    id: 'hq_49',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'AYT',
+    isHighYield: true,
+    stem: 'Soğuk Savaş döneminde Türkiye’nin 1952 yılında NATO’ya tam üye olmasını kolaylaştıran somut gelişme aşağıdakilerden hangisidir?',
+    choices: [
+      '1950 Kore Savaşı’na BM kararı doğrultusunda Türk tugayı gönderilmesi',
+      '1936 Montrö Boğazlar Sözleşmesi’nin imzalanması',
+      '1974 Kıbrıs Barış Harekâtı’nın gerçekleştirilmesi',
+      '1991’de SSCB’nin resmen dağılması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Kore Savaşı’ndaki (Kunuri Muharebeleri) başarı Türkiye’nin NATO üyeliğinin önünü açmıştır.',
+    relatedTermId: 'hist_ii_dunya_soguk_savas',
+  },
+  {
+    id: 'hq_50',
+    category: 'INKILAP_CAGDAS',
+    examLevel: 'AYT',
+    isHighYield: true,
+    stem: '1974 Kıbrıs Barış Harekâtı sonrası ABD’nin Türkiye’ye silah ambargosu uygulaması Türkiye’de hangi stratejik hamlenin doğmasına yol açmıştır?',
+    choices: [
+      'ASELSAN gibi kurumlarla yerli ve millî savunma sanayisi yatırımlarının başlatılması',
+      'Türkiye’nin NATO üyeliğinden resmen çekilmesi',
+      'Kıbrıs adasının tamamen BM yönetimine devredilmesi',
+      'Varşova Paktı ile askerî ittifak antlaşması imzalanması',
+    ],
+    correctIndex: 0,
+    examTip:
+      '1974 sonrası ambargo, Türkiye’nin dışa bağımlılığı azaltmak için ASELSAN, TUSAŞ ve HAVELSAN gibi yerli savunma adımlarını hızlandırdı.',
+    relatedTermId: 'hist_kibris_dis_sorunlar',
+  },
+];

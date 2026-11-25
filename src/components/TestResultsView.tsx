@@ -3,7 +3,6 @@ import type {FC} from 'react';
 import {EXAM_LEVEL_LABELS} from '../data/compounds';
 import type {Compound, QuizSummary} from '../types/chemistry';
 import {FormulaText} from './FormulaText';
-import {AdSenseSlot} from './LegalFooter';
 
 interface TestResultsViewProps {
   summary: QuizSummary;
@@ -132,9 +131,6 @@ export const TestResultsView: FC<TestResultsViewProps> = ({
           </div>
         </div>
       )}
-
-      {/* Non-intrusive Google AdSense Placement */}
-      <AdSenseSlot label="Test Sonu Önerilen Alan" />
     </section>
   );
 };

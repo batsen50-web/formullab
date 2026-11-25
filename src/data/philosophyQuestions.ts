@@ -1,0 +1,778 @@
+import type {PhilosophyExamQuestion} from '../types/philosophy';
+
+export const PHILOSOPHY_EXAM_QUESTIONS: PhilosophyExamQuestion[] = [
+  // =========================================================================
+  // 1. FELSEFEYİ TANIMA, DÜŞÜNME & DİL (10 SORU)
+  // =========================================================================
+  {
+    id: 'phq_1',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bilim tarihinde yeni bir teori eskisini geçersiz kılıp rafa kaldırabilirken felsefede 2400 yıl önceki Platon ve Aristoteles görüşleri bugün hâlâ tartışılmaya ve yeni fikirlere kaynak olmaya devam eder. Felsefenin bu özelliği hangi kavramla ifade edilir?',
+    choices: [
+      'Yığılımlı (kümülatif) olması',
+      'Deneysel doğrulanabilirlik taşıması',
+      'Dogmatik kesinlik içermesi',
+      'Yalnızca tek bir cevaba sahip olması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bilim "ilerlemeci", felsefe ise "yığılımlı (kümülatif)"tir; filozofların fikirleri birbirini yok etmeden birikir.',
+    relatedTermId: 'phil_refleksif_yigilimli',
+  },
+  {
+    id: 'phq_2',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir insanın kendi düşüncelerini yeniden ele alıp "Ben şu anda neyi, hangi önyargıyla böyle düşünüyorum?" diye sorgulaması felsefi düşüncenin hangi niteliğidir?',
+    choices: ['Refleksif olma', 'Evrensel olma', 'Kümülatif olma', 'Nesnel olma'],
+    correctIndex: 0,
+    examTip:
+      'Refleksiflik düşüncenin kendine dönmesi, düşünme üzerine yeniden düşünmesidir.',
+    relatedTermId: 'phil_refleksif_yigilimli',
+  },
+  {
+    id: 'phq_3',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Aşağıdaki sorulardan hangisi olgusal veya gündelik bir soru olmayıp doğrudan felsefi bir soru niteliği taşır?',
+    choices: [
+      'Adalet nedir ve her zaman yasayla örtüşür mü?',
+      'Türkiye’nin yüz ölçümü en büyük ili hangisidir?',
+      'Su deniz seviyesinde kaç santigrat derecede kaynar?',
+      'Bu akşamki konferans saat kaçta başlayacak?',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Felsefi sorular "Nedir?" kalıbıyla özü arar, tek ve olgusal yanıtı yoktur; derin anlam ve değer sorgulaması yapar.',
+    relatedTermId: 'phil_felsefi_soru',
+  },
+  {
+    id: 'phq_4',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Sokakta gördüğümüz ağaçlar insan zihninden bağımsız varlıklar olarak birer "gerçeklik"tir. "Bahçedeki çınar ağacı kurumuş" cümlesinin ise o ağacın durumuna uygun olup olmaması onun hangi değerini belirler?',
+    choices: ['Doğruluk', 'Gerçeklik', 'Özdeşlik', 'Analoji'],
+    correctIndex: 0,
+    examTip:
+      'Varlıklar gerçek veya gerçek dışı olur; yargılar ve önermeler ise doğru veya yanlış olur.',
+    relatedTermId: 'phil_gerceklik_dogruluk_hakikat',
+  },
+  {
+    id: 'phq_5',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Mantık açısından aşağıdaki ifadelerden hangisi bir "önerme" değildir?',
+    choices: [
+      'Lütfen sınav boyunca sessiz olunuz!',
+      'Bütün memeli hayvanlar omurgalıdır.',
+      'Ay Dünya’dan daha büyük bir gezegendir.',
+      'Hiçbir üçgenin iç açıları toplamı 200 derece değildir.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Emir, istek, soru ve ünlem cümleleri doğru veya yanlış değeri alamadıkları için önerme sayılmaz; yanlış yargılar bile ("Ay gezegendir") birer önermedir.',
+    relatedTermId: 'phil_onerme',
+  },
+  {
+    id: 'phq_6',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '"Mars da Dünya gibi kendi ekseni etrafında döner ve atmosfer barındırır; Dünya’da yaşam olduğuna göre Mars’ta da ilkel yaşam biçimleri bulunabilir." Bu çıkarımda hangi akıl yürütme yöntemi kullanılmıştır?',
+    choices: [
+      'Analoji (Özelden özele)',
+      'Tümdengelim (Genelden özele)',
+      'Tümevarım (Özelden genele)',
+      'Çelişmezlik',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İki özel nesne arasındaki bilinen ortak özelliklerden yola çıkarak başka bir özelliğin de ortak olabileceği sonucuna gitmeye Analoji denir.',
+    relatedTermId: 'phil_akil_yurutme_turleri',
+  },
+  {
+    id: 'phq_7',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir filozoftan "Özgürlük insan doğasının ayrılmaz özüdür" dedikten birkaç sayfa sonra "İnsan eylemleri bütünüyle dış nedenlerin zorunlu bir sonucudur ve özgürlük imkânsızdır" demesi mantığın hangi ilkesini ihlal eder?',
+    choices: [
+      'Çelişmezlik ilkesi',
+      'Tümevarım ilkesi',
+      'Analoji ilkesi',
+      'Apaçıklık ölçütü',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bir şey aynı anda ve aynı bakımdan hem A hem A-olmayan olamaz (Çelişmezlik); bu ilkenin bozulması tutarsızlık doğurur.',
+    relatedTermId: 'phil_akil_ilkeleri',
+  },
+  {
+    id: 'phq_8',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bilimsel bir iddia laboratuvarda deney ve gözlemle test edilip doğrulanırken, bir filozofun ortaya attığı görüşü kabul edilebilir kılma süreci aşağıdakilerden hangisiyle gerçekleşir?',
+    choices: [
+      'Gerekçe ve öncüllerle akli temellendirme yapmasıyla',
+      'Laboratuvar deneyleriyle kesin kanıt üretmesiyle',
+      'Tarihteki bütün filozofların aynı fikirde birleşmesiyle',
+      'Teknoloji ve sanayide kârlı ürünler oluşturmasıyla',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Felsefede doğrulama değil "temellendirme" vardır; filozof iddiasını tutarlı gerekçelerle (argümanlarla) destekler.',
+    relatedTermId: 'phil_arguman_gorus',
+  },
+  {
+    id: 'phq_9',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İlk kez "philosophos" (bilgeliği seven) sözcüğünü kullanarak insanın tam bilge olamayacağını, ancak bilgelik yolunda sürekli bir arayış içinde bulunabileceğini ifade eden düşünür kimdir?',
+    choices: ['Pisagor', 'Gorgias', 'Augustinus', 'Karl Marx'],
+    correctIndex: 0,
+    examTip:
+      'Pisagor bilgiye sahip olmanın değil bilgiyi sevmenin ve aramanın felsefenin özü olduğunu belirtmiştir.',
+    relatedTermId: 'phil_felsefe_hikmet',
+  },
+  {
+    id: 'phq_10',
+    category: 'FELSEFE_DUSUNME',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir tartışmada karşı tarafın ileri sürdüğü gerekçeleri çürütmek yerine "Sen zaten gençsin ve bu konudan anlamazsın" diyerek konuşmacının şahsına yönelen kişi hangi mantık hatasını yapmış olur?',
+    choices: [
+      'Safsata (Kişiye saldırı / Ad hominem)',
+      'Tümdengelim',
+      'Paranteze alma',
+      'Üçüncü hâlin imkânsızlığı',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Safsata doğru görünüşlü geçersiz akıl yürütmedir; fikre değil kişiye saldırmak en yaygın safsatalardandır.',
+    relatedTermId: 'phil_safsata_turleri',
+  },
+
+  // =========================================================================
+  // 2. VARLIK, BİLGİ & BİLİM FELSEFESİ (10 SORU)
+  // =========================================================================
+  {
+    id: 'phq_11',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Varlık felsefesinde (ontoloji) masa, ağaç ve insan gibi zaman ve mekânda yer kaplayan somut varlıklar "reel" varlık; Pi sayısı, üçgen ve Anka kuşu gibi yalnız zihinde tasarlanan varlıklar ise hangi kavramla adlandırılır?',
+    choices: [
+      'İdeal (Düşünsel) Varlık',
+      'Tözsel Madde',
+      'Tabula Rasa',
+      'Empirik Nesne',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bilimler yalnız reel veya yalnız formal alanla ilgilenirken Ontoloji hem reel hem ideal varlığı sorgular.',
+    relatedTermId: 'phil_ontoloji_metafizik',
+  },
+  {
+    id: 'phq_12',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Descartes’ın varlığı birbirine indirgenemeyen "düşünce/ruh" ve "yer kaplama/madde" şeklinde iki ayrı töze dayandırması varlığın niceliği açısından hangi görüşe örnektir?',
+    choices: ['Düalizm (İkicilik)', 'Monizm (Tekçilik)', 'Plüralizm (Çokçuluk)', 'Nihilizm (Hiççilik)'],
+    correctIndex: 0,
+    examTip:
+      'Monizm (1 töz: Thales, Spinoza), Düalizm (2 töz: Descartes), Plüralizm (çok ilke: Empedokles, Demokritos).',
+    relatedTermId: 'phil_varlik_nicelik',
+  },
+  {
+    id: 'phq_13',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Jean-Paul Sartre’ın "İnsan önce dünyaya gelir, var olur; daha sonra kendi özgür seçimleriyle ne olacağına karar vererek özünü oluşturur" düşüncesini özetleyen ünlü yargısı hangisidir?',
+    choices: [
+      'Varoluş özden önce gelir.',
+      'Bilgi güçtür.',
+      'Aynı ırmakta iki kez yıkanılmaz.',
+      'İnsan her şeyin ölçüsüdür.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Bir kâğıt kesme bıçağında öz (tasarım) varoluştan öncedir; oysa insanda "varoluş özden önce gelir" (Varoluşçuluk).',
+    relatedTermId: 'phil_cagdas_ontoloji',
+  },
+  {
+    id: 'phq_14',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'John Locke "İnsan zihni doğuştan üzerinde hiçbir yazı bulunmayan boş bir levhadır (Tabula Rasa); zihni dolduran tek kaynak duyu ve deneydir" görüşüyle bilgi felsefesinin hangi akımını temsil eder?',
+    choices: ['Empirizm (Deneycilik)', 'Rasyonalizm (Akılcılık)', 'Entüisyonizm (Sezgicilik)', 'Septisizm (Şüphecilik)'],
+    correctIndex: 0,
+    examTip:
+      'Doğuştan bilgiyi (a priori) reddeden Empirizm, Rasyonalizmin tam karşısında yer alır.',
+    relatedTermId: 'phil_rasyonalizm_empirizm',
+  },
+  {
+    id: 'phq_15',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '"Görüsüz (deneysiz) kavramlar boş, kavramsız görüler kördür." diyerek Rasyonalizm ile Empirizmi birleştiren filozof ve bilgi kuramı sırasıyla hangileridir?',
+    choices: [
+      'Immanuel Kant — Kritisizm',
+      'Henri Bergson — Entüisyonizm',
+      'Auguste Comte — Pozitivizm',
+      'William James — Pragmatizm',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Kant’a göre ham duyu verisi deneyden gelir ama onu bilgi hâline getiren kategoriler akılda bulunur.',
+    relatedTermId: 'phil_kritisizm_entuisyonizm',
+  },
+  {
+    id: 'phq_16',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Bir arkadaşımız "Şu an dışarıda kar yağıyor" dediğinde pencereden dışarı bakıp gerçekten kar yağdığını görerek bu önermeyi onaylamamız, doğru bilginin hangi ölçütüne dayanır?',
+    choices: ['Uygunluk', 'Tutarlılık', 'Tümel Uzlaşım', 'Apaçıklık'],
+    correctIndex: 0,
+    examTip:
+      'Önermenin dış dünyadaki gerçekliğe uyması "Uygunluk"; diğer önermelerle çelişmemesi ise "Tutarlılık" ölçütüdür.',
+    relatedTermId: 'phil_dogruluk_olcutleri',
+  },
+  {
+    id: 'phq_17',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Karl Popper’a göre bir kuramın bilimsel sayılabilmesi için milyonlarca destekleyici örnek bulmak yetmez; o kuramı hangi olgusal koşulun çürütebileceğinin baştan gösterilebilir olması gerekir. Popper’ın bu ölçütü hangisidir?',
+    choices: [
+      'Yanlışlanabilirlik',
+      'Tümevarımsal kesinlik',
+      'Pragmatik fayda',
+      'Paranteze alma',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Popper bilimselliği "doğrulanabilirlik" ile değil "yanlışlanabilirlik" ile tanımlamıştır.',
+    relatedTermId: 'phil_popper_yanlislanabilirlik',
+  },
+  {
+    id: 'phq_18',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Thomas Kuhn’a göre bilim tarihini belirleyen, bir dönemdeki bilim insanlarının üzerinde uzlaştığı ortak bakış açısı ve bunalım sonrası yerini yenisine bırakan kavramsal çerçeveye ne ad verilir?',
+    choices: ['Paradigma', 'Apaçıklık', 'Arkhe', 'Maksim'],
+    correctIndex: 0,
+    examTip:
+      'Eski paradigmanın açıklayamadığı anomaliler birikince "Bilimsel Devrim" gerçekleşir ve yeni paradigma kurulur.',
+    relatedTermId: 'phil_kuhn_paradigma',
+  },
+  {
+    id: 'phq_19',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Gorgias’ın "Hiçbir şey yoktur; olsa da bilemeyiz, bilsek de başkasına aktaramayız" biçimindeki üçlü tezi felsefede hangi anlayışı ifade eder?',
+    choices: ['Nihilizm (Hiççilik)', 'Realizm', 'Panteizm', 'Kritisizm'],
+    correctIndex: 0,
+    examTip:
+      'Sofist Gorgias hem varlık felsefesinde Nihilizmin hem de bilgi felsefesinde Septisizmin öncülerindendir.',
+    relatedTermId: 'phil_varlik_var_midir',
+  },
+  {
+    id: 'phq_20',
+    category: 'VARLIK_BILGI_BILIM',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '"İşe yarayan ve insana problem çözmede pratik fayda sağlayan bilgi doğrudur" görüşünü savunan William James ve John Dewey’in akımı hangisidir?',
+    choices: ['Pragmatizm', 'Analitik Felsefe', 'Pozitivizm', 'Materyalizm'],
+    correctIndex: 0,
+    examTip:
+      'Pragmatizm doğruluğu nesneye uygunlukta değil, bilginin yaşamdaki başarılı işlevinde ve yararlılığında arar.',
+    relatedTermId: 'phil_pragmatizm_analitik',
+  },
+
+  // =========================================================================
+  // 3. DEĞER FELSEFESİ: AHLAK, DİN, SİYASET & SANAT (10 SORU)
+  // =========================================================================
+  {
+    id: 'phq_21',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Ahlak felsefesinde "İnsan eylemleri daha önceki psikolojik, toplumsal ve fiziksel nedenlerin zorunlu sonucu olduğu için özgür iradeden ve ahlaki sorumluluktan söz edilemez" görüşünü savunan yaklaşım hangisidir?',
+    choices: ['Determinizm', 'İndeterminizm', 'Otodeterminizm', 'Utilitarizm'],
+    correctIndex: 0,
+    examTip:
+      'Otodeterminizm ise kişinin bilgisini ve aklını geliştirerek kendi ahlaki özgürlüğünü inşa edebileceğini savunur.',
+    relatedTermId: 'phil_ozgurluk_sorumluluk',
+  },
+  {
+    id: 'phq_22',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Evrensel ahlak yasasının varlığını kabul eden yaklaşımlardan Jeremy Bentham ve John Stuart Mill’in "En büyük sayıda insana en yüksek düzeyde fayda ve mutluluk sağlayan eylem iyidir" görüşü hangi kavramla anılır?',
+    choices: ['Utilitarizm (Toplumsal Faydacılık)', 'Hedonizm', 'Egoizm', 'Anarşizm'],
+    correctIndex: 0,
+    examTip:
+      'Utilitarizm faydayı yalnız bireye değil "toplumun geneline" yaymasıyla bencil Egoizmden ayrılır.',
+    relatedTermId: 'phil_evrensel_ahlak_kabul',
+  },
+  {
+    id: 'phq_23',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İnsanlığın geleneksel "sürü ahlakı"na başkaldırıp eski değerleri yıkarak kendi özgür ve güçlü değerlerini yaratan "Üst İnsan" (Übermensch) idealini ortaya atan filozof kimdir?',
+    choices: ['Friedrich Nietzsche', 'Immanuel Kant', 'Platon', 'Jeremy Bentham'],
+    correctIndex: 0,
+    examTip:
+      'Nietzsche, "Böyle Buyurdu Zerdüşt" eserinde mevcut evrensel ahlak kalıplarını reddeder.',
+    relatedTermId: 'phil_evrensel_ahlak_ret',
+  },
+  {
+    id: 'phq_24',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Din Felsefesi ile Teoloji (İlahiyat) arasındaki temel fark aşağıdakilerden hangisidir?',
+    choices: [
+      'Teoloji belirli bir dinin inançlarını dogmalarıyla temellendirirken Din Felsefesi din olgusunu tüm dinlere eşit mesafede, akıl ve eleştiriyle sorgular.',
+      'Din Felsefesi yalnızca tek bir dinin ibadet kurallarını öğretir.',
+      'Teoloji Tanrı’nın varlığını kesinlikle incelemez.',
+      'Din Felsefesi yalnız bilimsel laboratuvar deneyleriyle çalışır.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Teoloji içeriden ve imanla, Din Felsefesi ise dışarıdan, nesnel ve rasyonel bir tutumla dini anlamaya çalışır.',
+    relatedTermId: 'phil_din_felsefesi_teoloji',
+  },
+  {
+    id: 'phq_25',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Din felsefesinde "Evrendeki her şey Tanrı’nın içindedir; ancak Tanrı evrenle özdeş ve sınırlı değildir, evreni aşan bir boyutu da vardır" görüşünü savunan yaklaşım hangisidir?',
+    choices: ['Panenteizm', 'Panteizm', 'Deizm', 'Ateizm'],
+    correctIndex: 0,
+    examTip:
+      'Panteizmde Tanrı = Evren (tam özdeşlik); Panenteizmde ise Tanrı hem evrende içkin hem evrenden aşkındır.',
+    relatedTermId: 'phil_tanri_gorusleri',
+  },
+  {
+    id: 'phq_26',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Max Weber’in meşruiyet ve egemenlik sınıflandırmasına göre modern demokratik hukuk devletlerinde yönetme yetkisinin yazılı yasalara, anayasaya ve seçim prosedürlerine dayanması hangi egemenlik tipidir?',
+    choices: [
+      'Rasyonel – Yasal Egemenlik',
+      'Geleneksel Egemenlik',
+      'Karizmatik Egemenlik',
+      'Teokratik Egemenlik',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Weber’e göre 3 egemenlik tipi: Geleneksel (hanedan/töre), Karizmatik (olağanüstü lider) ve Rasyonel-Yasal (hukuk).',
+    relatedTermId: 'phil_siyaset_temel_kavramlar',
+  },
+  {
+    id: 'phq_27',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '18. yüzyılda "Yasaların Ruhu" adlı eserinde siyasi özgürlüğün korunabilmesi için Yasama, Yürütme ve Yargı yetkilerinin birbirinden bağımsız olması gerektiğini savunan filozof kimdir?',
+    choices: ['Montesquieu', 'Thomas Hobbes', 'Niccolò Machiavelli', 'Karl Marx'],
+    correctIndex: 0,
+    examTip:
+      'Montesquieu’nün "Güçler Ayrılığı" kuramı günümüz anayasal demokrasilerinin temel taşıdır.',
+    relatedTermId: 'phil_iktidar_kaynagi_sozlesme',
+  },
+  {
+    id: 'phq_28',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Siyaset felsefesinde gelecekteki teknoloji veya totaliter devlet baskısının birey özgürlüklerini nasıl yok edebileceğini gösteren "1984" (George Orwell) ve "Cesur Yeni Dünya" (Aldous Huxley) eserleri hangi türdedir?',
+    choices: [
+      'Distopya (Korku Ütopyası)',
+      'İstenen Ütopya',
+      'Doğal Hukuk',
+      'Scholastik Apoloji',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Thomas More’un "Ütopya" ve Fârâbî’nin "Erdemli Şehir" eserleri İstenen Ütopya; 1984 ve Cesur Yeni Dünya ise Distopyadır.',
+    relatedTermId: 'phil_utopyalar_distopyalar',
+  },
+  {
+    id: 'phq_29',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Karadeniz’de gün batımını canlı izlemek yalnızca Estetiğin konusu iken, bir ressamın o gün batımını tuvale aktardığı tablo aynı zamanda Sanat Felsefesinin de konusudur. Bu durumun nedeni nedir?',
+    choices: [
+      'Estetiğin hem doğadaki hem sanattaki güzeli; Sanat Felsefesinin ise yalnız insan ürünü sanatı incelemesi',
+      'Sanat felsefesinin yalnızca fotoğraf ve heykelle ilgilenmesi',
+      'Doğal güzelliklerin hiçbir estetik değer taşımaması',
+      'Estetiğin yalnız bilimsel doğa yasalarını araştırması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Estetik kapsam bakımından Sanat Felsefesinden daha geniştir; hem doğal güzeli hem sanatsal güzeli kapsar.',
+    relatedTermId: 'phil_estetik_sanat_felsefesi',
+  },
+  {
+    id: 'phq_30',
+    category: 'AHLAK_DIN_SIYASET_SANAT',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Platon ve Aristoteles’in sanatı doğanın veya ideaların bir yansıması olarak açıkladığı "Mimesis" kuramına karşılık, Benedetto Croce’nin sanatı sanatçının doğada olmayan benzersiz bir ifadeyi meydana getirmesi olarak tanımladığı kuram hangisidir?',
+    choices: [
+      'Yaratma Olarak Sanat',
+      'Taklit Olarak Sanat',
+      'Oyun Olarak Sanat',
+      'Fayda Olarak Sanat',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Taklit (Platon/Aristoteles), Yaratma (Croce), Oyun (Schiller) sanatı açıklayan üç ana kuramdır.',
+    relatedTermId: 'phil_sanat_kuramlari',
+  },
+
+  // =========================================================================
+  // 4. MÖ 6.yy – MS 17.yy FELSEFE TARİHİ (10 SORU)
+  // =========================================================================
+  {
+    id: 'phq_31',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'MÖ 6. yüzyılda Milet’te ilk filozof olarak kabul edilen Thales’in evrenin ana maddesini (arkhe) mitolojik tanrılar yerine "Su" ile açıklaması felsefe tarihi açısından neden bir dönüm noktasıdır?',
+    choices: [
+      'Evreni ilk kez doğaüstü efsanelerle değil, akıl ve doğanın kendi içindeki bir ilkeyle açıklaması',
+      'İnsanın hiçbir bilgiye ulaşamayacağını kanıtlaması',
+      'Modern kuantum fiziğini matematiksel olarak kurması',
+      'Platon’un idealar dünyasını savunması',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Milet Okulu (Thales, Anaksimandros, Anaksimenes) mitostan logosa (efsaneden akla) geçişi başlatmıştır.',
+    relatedTermId: 'phil_doga_filozoflari_arkhe',
+  },
+  {
+    id: 'phq_32',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '"Aynı ırmakta iki kez yıkanılmaz; çünkü sular sürekli akar ve değişir, her şey zıtların savaşından doğar" diyerek evrendeki sürekli oluşu ve arkasındaki düzen ilkesini (Logos) savunan Antik Yunan filozofu kimdir?',
+    choices: ['Herakleitos', 'Parmenides', 'Sokrates', 'Demokritos'],
+    correctIndex: 0,
+    examTip:
+      'Herakleitos değişimi (arkhe: Ateş) savunurken tam karşıtı Parmenides değişimin imkânsız olduğunu söyler.',
+    relatedTermId: 'phil_herakleitos_parmenides',
+  },
+  {
+    id: 'phq_33',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Sokrates, karşısındakine sorular sorarak önce onun bildiğini sandığı yanlışları fark ettirir (İroni), ardından yeni sorularla muhatabının zihninde doğuştan var olan doğru bilgiyi açığa çıkarır (Maieutik). Sokrates bu yöntemiyle neyi kanıtlamak ister?',
+    choices: [
+      'Doğru ve evrensel bilginin insan aklında doğuştan mevcut olduğunu',
+      'Bilginin yalnız duyular ve deney yoluyla sonradan öğrenildiğini',
+      'Genelgeçer ahlak ve doğrunun hiç var olmadığını',
+      'Sorgulamanın insanı mutlaka nihilizme götüreceğini',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Sokrates’in doğurtmaca (Maieutik) yöntemi Rasyonalizmin Antik Çağ’daki en güçlü örneğidir.',
+    relatedTermId: 'phil_sofistler_sokrates',
+  },
+  {
+    id: 'phq_34',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Platon’un meşhur "Mağara Benzetmesi"nde zincirli mahkûmların duvarda gördüğü gölgeler ile mağara dışındaki güneş sırasıyla neleri temsil eder?',
+    choices: [
+      'Duyular dünyasının yanıltıcı sanılarını (Doxa) ve akılla kavranan İyi İdeasını',
+      'Tarihsel belgeleri ve deneysel doğa bilimini',
+      'Maddi atomları ve boşluğu',
+      'Devlet yasalarını ve sözleşmeyi',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Platon’a göre asıl gerçeklik değişmez İdealar dünyasıdır; somut nesneler ise yalnızca onların eksik kopyalarıdır.',
+    relatedTermId: 'phil_platon',
+  },
+  {
+    id: 'phq_35',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Aristoteles’e göre bir bronz heykelin varlığa gelmesinde rol oynayan "bronz madeni, heykelin biçimi, heykeltıraş ve heykelin yapılma gayesi" sırasıyla hangi dört nedene karşılık gelir?',
+    choices: [
+      'Maddi – Formsel – Fail – Ereksel Neden',
+      'Episteme – Doxa – Logos – Nous',
+      'Tez – Antitez – Sentez – Tin',
+      'İroni – Maieutik – Safsata – Kuşku',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Aristoteles hocası Platon’un aksine "form"un (özün) başka bir dünyada değil bizzat maddenin içinde bulunduğunu savunur.',
+    relatedTermId: 'phil_aristoteles',
+  },
+  {
+    id: 'phq_36',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Orta Çağ Hristiyan felsefesinin "Tümeller Tartışması"nda, "İnsanlık veya ağaçlık gibi genel kavramların tekil nesnelerden bağımsız bir gerçekliği yoktur; bunlar yalnızca zihnimizin nesnelere verdiği adlardır" görüşünü (Adcılık / Nominalizm) savunan düşünür kimdir?',
+    choices: ['Ockhamlı William', 'Aziz Augustinus', 'Aziz Anselmus', 'Aquinalı Thomas'],
+    correctIndex: 0,
+    examTip:
+      'Ockhamlı William’ın yalnız somut tekilleri gerçek sayması Yeni Çağ’daki deneysel bilim ve empirizmi doğurmuştur.',
+    relatedTermId: 'phil_tumeller_tartismasi',
+  },
+  {
+    id: 'phq_37',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'İslam filozoflarından El-Kindî, evrenin öncesiz değil sonradan yaratılmış (hâdis) olduğundan hareketle her sonradan var olanın bir yaratıcı gerektirdiğini savunarak hangi delili ortaya koymuştur?',
+    choices: ['Hudûs Delili', 'Kötülük Delili', 'Analoji Delili', 'Ontolojik Şüphe'],
+    correctIndex: 0,
+    examTip:
+      'Fârâbî ve İbn Sînâ ise varlığı "Zorunlu Varlık (Vacibü’l-Vücud)" ve "Mümkün Varlık" diye ayırarak temellendirme yapmıştır.',
+    relatedTermId: 'phil_islam_felsefesi_el_kindi_farabi',
+  },
+  {
+    id: 'phq_38',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Gazâlî’nin "Tehâfütü’l-Felâsife" eserinde filozofların metafizik konularda akılla çelişkiye düştüğünü savunmasına karşılık "Tehâfütü’t-Tehâfüt"ü yazarak din ile felsefenin aynı hakikati farklı yollardan ifade ettiğini savunan Endülüslü filozof kimdir?',
+    choices: ['İbn Rüşd', 'El-Kindî', 'Fârâbî', 'İbn Haldun'],
+    correctIndex: 0,
+    examTip:
+      'İbn Rüşd’e göre din ile felsefe "süt kardeştir"; akıl ile vahiy hakikatte birbiriyle çelişmez.',
+    relatedTermId: 'phil_gazali_ibn_rusd',
+  },
+  {
+    id: 'phq_39',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '17. yüzyılda "Bilgi güçtür" diyerek zihni yanıltan önyargıları "İdoller" (soy, mağara, çarşı, tiyatro) adıyla eleştiren ve doğa bilimlerinde deney-gözleme dayalı yeni bir tümevarım yöntemi öneren düşünür kimdir?',
+    choices: ['Francis Bacon', 'René Descartes', 'Baruch Spinoza', 'Aristoteles'],
+    correctIndex: 0,
+    examTip:
+      'Bacon’ın "Novum Organum" eseri Aristoteles’in klasik kıyas (Organon) mantığına bir alternatif olarak yazılmıştır.',
+    relatedTermId: 'phil_bilimsel_yontem_bacon',
+  },
+  {
+    id: 'phq_40',
+    category: 'ILK_ORTA_YENI_CAG',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Descartes tüm duyusal ve öğrenilmiş bilgilerinden yöntemli olarak şüphe ettikten sonra "Şüphe ettiğimden şüphe edemem; şüphe etmek düşünmektir" diyerek hangi ilk kesin bilgiye ulaşmıştır?',
+    choices: [
+      'Düşünüyorum, o hâlde varım (Cogito ergo sum)',
+      'Hiçbir şey bilinemez',
+      'İnsan zihni boş bir levhadır',
+      'Tanrı ve evren özdeştir',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Descartes’ta şüphe amaç değil, sarsılmaz rasyonel temele ulaşmak için kullanılan geçici bir yöntemdir.',
+    relatedTermId: 'phil_descartes_kartezyen',
+  },
+
+  // =========================================================================
+  // 5. 18–20.yy FELSEFESİ & TÜRKİYE'DE FELSEFE (10 SORU)
+  // =========================================================================
+  {
+    id: 'phq_41',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Immanuel Kant’ın "Aydınlanma nedir?" sorusuna verdiği "İnsanın kendi suçu ile düşmüş olduğu ergin olmayış durumundan kurtulmasıdır; aklını kendin kullanma cesaretini göster!" yanıtı 18. yüzyıl felsefesinin hangi temel ilkesini özetler?',
+    choices: [
+      'Gelenek ve dogmaların vesayeti yerine bireysel aklın özgürleşmesini',
+      'Tüm bilimsel faaliyetlerin durdurulup skolastiğe dönülmesini',
+      'İnsanın doğuştan hiçbir akıl yetisine sahip olmadığını',
+      'Devletin mutlak monarşiye devredilmesi gerektiğini',
+    ],
+    correctIndex: 0,
+    examTip:
+      '18. yy Aydınlanma Çağı akıl, özgürlük, ilerleme ve insan hakları kavramlarıyla modern toplumları şekillendirmiştir.',
+    relatedTermId: 'phil_aydinlanma_nedir',
+  },
+  {
+    id: 'phq_42',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Kant’ın Ödev Ahlakına göre bir esnafın "Müşterilerimi kaybetmeyeyim ve iyi bilineyim" düşüncesiyle doğru tartı yapması ile "Başkasına haksızlık yapmak ödeve aykırıdır" diyerek doğru tartı yapması arasındaki fark nedir?',
+    choices: [
+      'İlki çıkara dayalı (ödeve uygun), ikincisi yalnız ödev duygusuyla yapıldığı için gerçekten ahlakidir (ödevden dolayı).',
+      'Her ikisi de aynı ölçüde en yüksek ahlaki erdemdir.',
+      'İkincisi bireyin faydasını gözetmediği için ahlak dışıdır.',
+      'İlki kategorik buyruğun evrensel örneğidir.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Kant’ta bir eylemin ahlaki değeri sonucundaki çıkarla değil, arkasındaki saf "iyi niyet ve ödev bilinci"yle ölçülür.',
+    relatedTermId: 'phil_kant_odev_ahlaki',
+  },
+  {
+    id: 'phq_43',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Hegel’in Diyalektik İdealizmine göre bir fikrin (Tez) kendi karşıtını (Antitez) doğurup onunla çatışarak daha yüksek yeni bir aşamaya (Sentez) ulaşması evrende neyin ilerleyişini gösterir?',
+    choices: [
+      'Mutlak Tin’in (Geist) kendini açmasının',
+      'Maddesel sınıf çatışmasının sona ermesinin',
+      'Paranteze alma yönteminin',
+      'Doğadaki nedensellik alışkanlığının',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Hegel diyalektiği düşünce/tin merkezlidir; Karl Marx aynı diyalektik şemayı maddeye/ekonomiye uyarlayarak Diyalektik Materyalizmi kurmuştur.',
+    relatedTermId: 'phil_hegel_diyalektik',
+  },
+  {
+    id: 'phq_44',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Edmund Husserl’in kurduğu Fenomenoloji (Görüngübilim) yönteminde, bir nesnenin gündelik ve bilimsel önyargılardan arındırılarak saf "öz"üne ulaşmak için önceki tüm kabullerin geçici olarak askıya alınmasına ne ad verilir?',
+    choices: [
+      'Paranteze alma',
+      'Ufukların kaynaşması',
+      'Tümel uzlaşım',
+      'Kategorik buyruk',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Paranteze alma nesneyi inkâr etmek değil, saf bilinç görüngüsü olarak özünü yakalamak için önyargıları kenara bırakmaktır.',
+    relatedTermId: 'phil_fenomenoloji_husserl',
+  },
+  {
+    id: 'phq_45',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: '20. yüzyıl felsefesinde doğa bilimlerinin "açıklama" yöntemine karşılık tarih ve insan bilimlerinin metin ve olayları tarihsel bağlamında "anlama ve yorumlama" yöntemini temel alan akım ile önde gelen temsilcileri kimlerdir?',
+    choices: [
+      'Hermeneutik — Wilhelm Dilthey ve Hans-Georg Gadamer',
+      'Mantıkçı Pozitivizm — Rudolf Carnap ve Karl Popper',
+      'Yeni Ontoloji — Nicolai Hartmann',
+      'Diyalektik Materyalizm — Karl Marx ve Friedrich Engels',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Gadamer’in "Ufukların Kaynaşması" kavramı okurun ufku ile metnin/tarihin ufkunun buluşup yeni anlam üretmesini ifade eder.',
+    relatedTermId: 'phil_hermeneutik',
+  },
+  {
+    id: 'phq_46',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Karl Marx’ın Diyalektik Materyalizmine göre bir toplumun hukuk, siyaset, din ve sanat gibi "üstyapı" kurumlarını belirleyen temel unsur aşağıdakilerden hangisidir?',
+    choices: [
+      'Ekonomik üretim ilişkileri ve üretim araçlarından oluşan altyapı',
+      'Bireysel sezgi ve kalp gözü',
+      'Mutlak Tin’in mantıksal kategorileri',
+      'Platonik değişmez idealar',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Marx’a göre "İnsanların bilinci varlıklarını değil, toplumsal varlıkları (üretim koşulları) bilinçlerini belirler."',
+    relatedTermId: 'phil_diyalektik_materyalizm',
+  },
+  {
+    id: 'phq_47',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Nicolai Hartmann’ın Yeni Ontoloji yaklaşımında varlığı alttan üste doğru dört katmana (İnorganik, Organik, Ruhsal, Tinsel) ayırması bize neyi anlatır?',
+    choices: [
+      'Üst katmanlar varlıkça alt katmanlara dayanır ancak onlara indirgenemeyen yeni özellikler ve özgürlük taşır.',
+      'Yalnızca cansız (inorganik) madde gerçektir, diğer üç katman hayaldir.',
+      'Ruhsal ve tinsel katmanlar inorganik madde olmadan bile tek başına yaşar.',
+      'Varlık yalnızca sayılardan ibarettir.',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Hartmann varlık felsefesini bilgi felsefesinden önceye koyarak gerçekliği bu dört katmanlı bütünlükte inceler.',
+    relatedTermId: 'phil_yeni_ontoloji_hartmann',
+  },
+  {
+    id: 'phq_48',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Türkiye’de felsefe tarihçiliğinin kurucularından biri olup "İslam Düşüncesi Tarihi", "Türk Tefekkür Tarihi" ve "Aşk Ahlakı" gibi eserleriyle Doğu ve Batı düşüncesini karşılaştırmalı olarak inceleyen düşünürümüz kimdir?',
+    choices: [
+      'Hilmi Ziya Ülken',
+      'Aydın Sayılı',
+      'Takiyettin Mengüşoğlu',
+      'Nusret Hızır',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Hilmi Ziya Ülken çok yönlü eserleriyle hem İslam felsefesinin hem de Türkiye’deki çağdaş düşünce tarihinin öncü ismidir.',
+    relatedTermId: 'phil_ulken_gokberk_topcu',
+  },
+  {
+    id: 'phq_49',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Sorbonne’daki doktorasında hazırladığı "İsyan Ahlakı" çalışmasında insanın bencil çıkarlara ve haksızlıklara karşı iman ve sorumluluk bilinciyle hareket etmesini savunan Türk düşünürü kimdir?',
+    choices: [
+      'Nurettin Topçu',
+      'Macit Gökberk',
+      'İoanna Kuçuradi',
+      'Uluğ Nutku',
+    ],
+    correctIndex: 0,
+    examTip:
+      'Nurettin Topçu Hareket dergisinin kurucusu olup Maurice Blondel’in "hareket felsefesi"nden etkilenerek İslam ahlakını yorumlamıştır.',
+    relatedTermId: 'phil_ulken_gokberk_topcu',
+  },
+  {
+    id: 'phq_50',
+    category: 'AYDINLANMA_CAGDAS_TURK',
+    examLevel: 'TYT_AYT',
+    isHighYield: true,
+    stem: 'Etik, İnsan Hakları ve Değerler Felsefesi alanındaki uluslararası çalışmalarıyla tanınan, UNESCO Felsefe ve İnsan Hakları Komitelerinde ve Dünya Felsefe Dernekleri Federasyonu başkanlığında görev yapan Türk filozofumuz kimdir?',
+    choices: [
+      'İoanna Kuçuradi',
+      'Mübahat Türker Küyel',
+      'Aydın Sayılı',
+      'Nusret Hızır',
+    ],
+    correctIndex: 0,
+    examTip:
+      'İoanna Kuçuradi, değer sorunlarının yalnız tekil durumlarda insan haklarının korunması temelinde çözülebileceğini savunur.',
+    relatedTermId: 'phil_kucuradi_kuyel_nutku',
+  },
+];

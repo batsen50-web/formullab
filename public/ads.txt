@@ -1,3 +1,0 @@
-# Google AdSense ads.txt şablonu
-# Google AdSense hesabınızdan aldığınız Yayıncı Kimliğini (pub-XXXXXXXXXXXXXXXX) aşağıdaki satırın başındaki # işaretini kaldırarak girin:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
