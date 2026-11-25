@@ -220,7 +220,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen lab-canvas flex flex-col">
+    <div className="min-h-[100dvh] lab-canvas flex flex-col overflow-x-clip">
       <div className="fixed inset-0 lab-grid-overlay pointer-events-none" aria-hidden="true" />
 
       {/* Top Header */}
